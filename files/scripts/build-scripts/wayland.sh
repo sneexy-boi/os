@@ -24,8 +24,9 @@ git clone https://github.com/ErikReider/SwayAudioIdleInhibit
 cd SwayAudioIdleInhibit
 meson build
 ninja -C build
-meson install -C build
-mv /tmp/SwayAudioIdleInhibit/build/sway-audio-idle-inhibit /usr/bin
+meson install -C build --destdir "/tmp/wayland-built"
+#mv /tmp/wayland-built/usr/local/bin/sway-audio-idle-inhibit /tmp/wayland-built/usr/bin/sway-audio-idle-inhibit
+#rm -rf /tmp/wayland-built/usr/local
 
 # wpaperd - https://github.com/danyspin97/wpaperd
 cd /tmp
@@ -42,3 +43,6 @@ cd SwayOSD
 meson setup build
 ninja -C build
 meson install -C build --destdir "/tmp/wayland-built"
+
+# Move /usr/local into /usr, because bluebuild does not like /usr/local and software installs into that directory
+mv /tmp/wayland-built/usr/local /tmp/wayland-built/usr
