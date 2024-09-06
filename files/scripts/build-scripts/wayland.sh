@@ -34,7 +34,7 @@ git clone https://github.com/danyspin97/wpaperd
 cd wpaperd
 cargo build --release
 scdoc < man/wpaperd-output.5.scd > man/wpaperd-output.5
-/tmp/rinstall/target/release/rinstall install --prefix /usr -D "/tmp/wayland-built" -y
+/tmp/rinstall/target/release/rinstall install --system --prefix /usr -D "/tmp/wayland-built" -y
 
 # SwayOSD - https://github.com/ErikReider/SwayOSD
 cd /tmp
