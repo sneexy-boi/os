@@ -1,19 +1,39 @@
-# bluebuild-custom &nbsp; [![bluebuild build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml)
+# bluebuild-custom &nbsp; [![bluebuild build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml) [![containers build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+Custom [BlueBuild](https://blue-build.org) image builds for myself, which is based on [Universal Blue](https://universal-blue.org) which is based on Immutable [Fedora](https://fedoraproject.org) images.
 
-After setup, it is recommended you update this README to describe your custom image.
+These images are heavily opinionated and customized, but descriptions of each image is below if you want to use them or fork them.
+
+Common features shared between these images:
+
+- DNS server/settings overrides
+- Completely customized desktops/setups
+- Custom extensions and a lot of additional software (that I use daily)
+
+## Wuzetka
+
+Image name: `wuzetka`
+
+Customized image based on Fedora Kinoite, which uses the KDE Plasma desktop.
+
+## Mazurek
+
+Image name: `mazurek`
+
+Customized image based on the Fedora base image, which includes the niri window manager and an entirely customized and personal experience.
 
 ## Installation
 
 > **Warning**  
 > [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
 
+First, check which image you want to use by copying its image name from the descriptions above, and use them in place of `<image>` in the commands below.
+
 To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/sneexy-boi/bluebuild-custom:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/sneexy-boi/<image>:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,7 +41,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sneexy-boi/bluebuild-custom:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sneexy-boi/<image>:latest
   ```
 - Reboot again to complete the installation
   ```

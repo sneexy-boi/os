@@ -10,7 +10,7 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - from-file: common/sneexy/mazurek/rpm-ostree.yml
+  - from-file: common/mazurek/rpm-ostree.yml
 
   - type: script
     scripts:
@@ -21,7 +21,7 @@ modules:
 
   - type: files
     files:
-      - source: system/sneexy/mazurek
+      - source: system/mazurek
         destination: /
 
   - type: containerfile
@@ -32,21 +32,21 @@ modules:
       - RUN chmod +x /usr/bin/unfuck_music
       - RUN chmod +x /etc/sddm/sddm-useradd
       # Copy self compiled software and allat
-      - COPY --from=ghcr.io/sernik-tech/mazurek-helper /artifacts/usr /usr
-      - COPY --from=ghcr.io/sernik-tech/mazurek-helper /artifacts/etc /etc
+      - COPY --from=ghcr.io/sneexy-boi/mazurek-helper /artifacts/usr /usr
+      - COPY --from=ghcr.io/sneexy-boi/mazurek-helper /artifacts/etc /etc
 
   - type: systemd
     system:
       enabled:
         - sddm-boot.service
 
-  - from-file: common/sneexy/mazurek/flatpaks.yml
-  - from-file: common/sneexy/bling.yml
-  - from-file: common/sneexy/fonts.yml
+  - from-file: common/mazurek/flatpaks.yml
+  - from-file: common/bling.yml
+  - from-file: common/fonts.yml
 
   - type: gschema-overrides
     include:
       - zz1-mazurek.gschema.override
 
-  - from-file: common/sneexy/akmods.yml
+  - from-file: common/akmods.yml
   - type: signing

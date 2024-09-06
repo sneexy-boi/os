@@ -10,7 +10,7 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-    - from-file: common/sneexy/wuzetka/rpm-ostree.yml
+    - from-file: common/wuzetka/rpm-ostree.yml
     
     - type: script
       scripts:
@@ -21,7 +21,7 @@ modules:
 
     - type: files
       files:
-        - source: system/sneexy/wuzetka
+        - source: system/wuzetka
           destination: /
 
     - type: containerfile
@@ -31,16 +31,16 @@ modules:
         # ensure unfuck_music script is executable
         - RUN chmod +x /usr/bin/unfuck_music
         # Copy self compiled software and allat
-        - COPY --from=ghcr.io/sernik-tech/wuzetka-helper /artifacts/usr /usr
-        - COPY --from=ghcr.io/sernik-tech/wuzetka-helper /artifacts/etc /etc
+        - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/usr /usr
+        - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/etc /etc
 
-    - from-file: common/sneexy/wuzetka/flatpaks.yml
-    - from-file: common/sneexy/bling.yml
-    - from-file: common/sneexy/fonts.yml
+    - from-file: common/wuzetka/flatpaks.yml
+    - from-file: common/bling.yml
+    - from-file: common/fonts.yml
 
     - type: gschema-overrides
       include:
         - zz1-wuzetka.gschema.override
 
-    - from-file: common/sneexy/akmods.yml
+    - from-file: common/akmods.yml
     - type: signing
