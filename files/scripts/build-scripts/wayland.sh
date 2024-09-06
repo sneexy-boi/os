@@ -43,6 +43,3 @@ cd SwayOSD
 meson setup build --prefix /usr
 ninja -C build
 meson install -C build --destdir "/tmp/wayland-built"
-
-# Move /usr/local into /usr, because bluebuild does not like /usr/local and software installs into that directory
-#mv /tmp/wayland-built/usr/local/* /tmp/wayland-built/usr
