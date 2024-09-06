@@ -30,6 +30,6 @@ cargo install tlrc --root /tmp/cargo-built/usr
 
 # emoji-gen - https://activitypub.software/Amelia/emoji-gen
 cd /tmp
-git clone https://activitypub.software/Amelia/emoji-gen.git
+git clone https://git.gay/sneexy/emoji-gen.git
 cd emoji-gen
 cargo install --path . --root /tmp/cargo-built/usr
