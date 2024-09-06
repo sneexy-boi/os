@@ -1,8 +1,8 @@
 # GTK Theme
 [org.gnome.desktop.interface]
-gtk-theme = "Catppuccin-Mocha-Compact-Green-Dark"
+gtk-theme = "Colloid-Green-Dark-Compact-Catppuccin"
 icon-theme = "Papirus-Dark"
-cursor-theme = "Bibata-Modern-Light"
+cursor-theme = "Bibata-Modern-Mocha-Light"
 font-name = "Lexend 10"
 document-font-name = "Lexend Medium 11"
 monospace-font-name = "JetBrainsMono Nerd Font 11"
