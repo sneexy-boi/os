@@ -22,7 +22,7 @@ chmod +x ./target/release/rinstall
 cd /tmp
 git clone https://github.com/ErikReider/SwayAudioIdleInhibit
 cd SwayAudioIdleInhibit
-meson build
+meson build --prefix /usr
 ninja -C build
 meson install -C build --destdir "/tmp/wayland-built"
 #mv /tmp/wayland-built/usr/local/bin/sway-audio-idle-inhibit /tmp/wayland-built/usr/bin/sway-audio-idle-inhibit
@@ -34,15 +34,15 @@ git clone https://github.com/danyspin97/wpaperd
 cd wpaperd
 cargo build --release
 scdoc < man/wpaperd-output.5.scd > man/wpaperd-output.5
-/tmp/rinstall/target/release/rinstall install -D "/tmp/wayland-built" -y
+/tmp/rinstall/target/release/rinstall install --prefix /usr -D "/tmp/wayland-built" -y
 
 # SwayOSD - https://github.com/ErikReider/SwayOSD
 cd /tmp
 git clone https://github.com/ErikReider/SwayOSD
 cd SwayOSD
-meson setup build
+meson setup build --prefix /usr
 ninja -C build
 meson install -C build --destdir "/tmp/wayland-built"
 
 # Move /usr/local into /usr, because bluebuild does not like /usr/local and software installs into that directory
-mv /tmp/wayland-built/usr/local/* /tmp/wayland-built/usr
+#mv /tmp/wayland-built/usr/local/* /tmp/wayland-built/usr
