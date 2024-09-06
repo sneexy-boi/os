@@ -6,7 +6,7 @@ on:
     push:
         paths:
             - ".github/**"
-            - "config/scripts/build-scripts/**"
+            - "files/scripts/build-scripts/**"
             - "containerfiles/**"
     workflow_dispatch:
 env:
