@@ -1,0 +1,46 @@
+# image will be published to ghcr.io/sernik-tech/<name>
+name: wuzetka
+# description will be included in the image's metadata
+description: sneexy's personal and opinionated kinoite image
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/kinoite-main
+image-version: 40 # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+    - from-file: common/sneexy/wuzetka/rpm-ostree.yml
+    
+    - type: script
+      scripts:
+        - ld.sh
+        - qdbus.sh
+        - posy-cursors.sh
+        - system-wuzetka.sh
+
+    - type: files
+      files:
+        - source: system/sneexy/wuzetka
+          destination: /
+
+    - type: containerfile
+      snippets:
+        # Replace default sddm background
+        - RUN ln -sf /usr/share/backgrounds/catppuccin/black-hole-mocha.png /usr/share/sddm/themes/sddm-astronaut-theme/background.png
+        # ensure unfuck_music script is executable
+        - RUN chmod +x /usr/bin/unfuck_music
+        # Copy self compiled software and allat
+        - COPY --from=ghcr.io/sernik-tech/wuzetka-helper /artifacts/usr /usr
+        - COPY --from=ghcr.io/sernik-tech/wuzetka-helper /artifacts/etc /etc
+
+    - from-file: common/sneexy/wuzetka/flatpaks.yml
+    - from-file: common/sneexy/bling.yml
+    - from-file: common/sneexy/fonts.yml
+
+    - type: gschema-overrides
+      include:
+        - zz1-wuzetka.gschema.override
+
+    - from-file: common/sneexy/akmods.yml
+    - type: signing

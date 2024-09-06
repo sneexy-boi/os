@@ -1,0 +1,8 @@
+[Context]
+filesystems=~/.local/share/themes:ro;~/.themes:ro;/etc/wuzetka-system:ro;xdg-config/fontconfig:ro;xdg-run/.flatpak/dev.vencord.Vesktop:create;xdg-run/discord-ipc-*;xdg-config/gtk-3.0:ro;xdg-config/gtk-4.0:ro
+
+[Environment]
+ICON_THEME=Papirus-Dark
+XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
+XCURSOR_SIZE=24
+XCURSOR_THEME=Bibata-Modern-Mocha-Light
