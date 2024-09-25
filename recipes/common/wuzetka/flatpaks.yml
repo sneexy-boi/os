@@ -12,7 +12,7 @@ system:
     - org.gajim.Gajim
     - org.kde.neochat
     - chat.revolt.RevoltDesktop
-    - org.signal.Signal
+    #- org.signal.Signal # Flatpak has ... security issues. Using the rpm package for now.
     - dev.vencord.Vesktop
     - dev.geopjr.Tuba
     - org.kde.tokodon

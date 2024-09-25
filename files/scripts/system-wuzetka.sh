@@ -49,11 +49,10 @@ sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-bazzite.repo
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-bazzite-multilib.repo
 
 #
-# wgcf
+# Signal Desktop (RPM Package)
 #
-WGCF_VER=$(curl -sL https://api.github.com/repos/ViRb3/wgcf/releases/latest | jq -r '.assets[] | select(.name? | match(".*_linux_amd64$")) | .browser_download_url')
-curl -sL -o /usr/bin/wgcf ${WGCF_VER}
-chmod +x /usr/bin/wgcf
+wget "https://download.opensuse.org/repositories/network:/im:/signal/Fedora_$(rpm -E %fedora)/network:im:signal.repo" -O "/etc/yum.repos.d/_opensuse_signal-desktop.repo"
+rpm-ostree install signal-desktop
 
 #
 # Thorium browser
@@ -124,15 +123,16 @@ rm -rf /usr/share/sddm/themes/sddm-astronaut-theme/Fonts
 sed -i 's/ScreenWidth="1920"//' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
 sed -i 's/ScreenHeight="1080"//' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
 sed -i 's/## Adjust to your resolution to help SDDM speed up on calculations//' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
+sed -i 's@HeaderText=""@HeaderText="erm. what the sigma?"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
 sed -i 's@PartialBlur="true"@PartialBlur="false"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@FullBlur="false"@FullBlur="true"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
+sed -i 's@FullBlur=""@FullBlur="true"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
 sed -i 's@Font="Open Sans"@Font="Lexend"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
 # catppuccinify
-sed -i 's@MainColor="#F8F8F2"@MainColor="#cdd6f4"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@AccentColor="#343746"@AccentColor="#a6e3a1"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
+sed -i 's@TextColor="#F8F8F2"@TextColor="#cdd6f4"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
+sed -i 's@HighlightColor="#343746"@HighlightColor="#a6e3a1"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
 sed -i 's@BackgroundColor="#21222C"@BackgroundColor="#1e1e2e"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@placeholderColor="#bbbbbb"@placeholderColor="#6c7086"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@IconColor="#ffffff"@IconColor="#cdd6f4"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
+sed -i 's@PlaceholderColor="#bbbbbb"@PlaceholderColor="#6c7086"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
+sed -i 's@SystemButtonsIconColor="#ffffff"@SystemButtonsIconColor="#cdd6f4"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
 
 #
 # KDE Theme

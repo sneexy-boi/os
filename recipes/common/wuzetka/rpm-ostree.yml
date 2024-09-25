@@ -33,6 +33,7 @@ install:
 
   # office
   - libreoffice
+  - thunderbird
   - merkuro
 
   # other software
