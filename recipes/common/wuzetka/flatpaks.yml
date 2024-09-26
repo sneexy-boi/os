@@ -11,7 +11,7 @@ system:
     - org.gajim.Gajim
     - org.kde.neochat
     - chat.revolt.RevoltDesktop
-    - org.signal.Signal # Flatpak has ... security issues. Using the rpm package for now.
+    - org.signal.Signal
     - dev.vencord.Vesktop
     - dev.geopjr.Tuba
     - org.kde.tokodon
@@ -53,7 +53,6 @@ system:
     - io.github.nate_xyz.Paleta
     - io.github.lainsce.Emulsion
     - com.bitwarden.desktop
-    - org.kde.kompare
     - com.github.qarmin.szyszka
 
     # gaming
@@ -75,16 +74,6 @@ system:
     - net.minetest.Minetest
 
     # system applications
-    - org.kde.filelight
-    - org.kde.gwenview
-    - org.kde.isoimagewriter
-    - org.kde.kclock
-    - org.kde.kamoso
-    - org.kde.kfind
-    - org.kde.krdc
-    - org.kde.kweather
-    - org.kde.okular
-    - org.pipewire.Helvum
     - com.github.tchx84.Flatseal
     - org.gustavoperedo.FontDownloader
     - io.github.thetumultuousunicornofdarkness.cpu-x

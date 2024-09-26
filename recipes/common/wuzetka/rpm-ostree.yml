@@ -59,6 +59,7 @@ install:
   # environment
   - pavucontrol-qt
   - playerctl
+  - helvum
   - crontabs
   - tailscale
   - gamescope
@@ -121,13 +122,22 @@ install:
   - gdisk
   - pv
 
-  # kde applications and utilities (some probably already installed but /shrug)
+  # kde applications and utilities
   - ark
   - dolphin-plugins
   - rom-properties-kf6
   - k3b
   - kate
   - ksystemlog
+  - filelight
+  - gwenview
+  - isoimagewriter
+  - kclock
+  - kamoso
+  - kfind
+  - kweather
+  - kompare
+  - okular
   - power-profiles-daemon
 
   # kde libraries
