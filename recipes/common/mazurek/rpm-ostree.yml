@@ -84,6 +84,7 @@ install:
     # environment
     - power-profiles-daemon
     - xorg-x11-server-Xwayland
+    - xdg-desktop-portal-gtk
     - xdg-desktop-portal-gnome
     - kwallet
     - pam-kwallet
