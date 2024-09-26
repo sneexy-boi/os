@@ -6,13 +6,12 @@ system:
   repo-title: "Flathub (system-wide)"
   install:
     # internet and chat
-    - eu.betterbird.Betterbird
     - org.qbittorrent.qBittorrent
     - org.nicotine_plus.Nicotine
     - org.gajim.Gajim
     - org.kde.neochat
     - chat.revolt.RevoltDesktop
-    #- org.signal.Signal # Flatpak has ... security issues. Using the rpm package for now.
+    - org.signal.Signal # Flatpak has ... security issues. Using the rpm package for now.
     - dev.vencord.Vesktop
     - dev.geopjr.Tuba
     - org.kde.tokodon

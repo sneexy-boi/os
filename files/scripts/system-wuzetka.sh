@@ -51,8 +51,8 @@ sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-bazzite-multil
 #
 # Signal Desktop (RPM Package)
 #
-wget "https://download.opensuse.org/repositories/network:/im:/signal/Fedora_$(rpm -E %fedora)/network:im:signal.repo" -O "/etc/yum.repos.d/_opensuse_signal-desktop.repo"
-rpm-ostree install signal-desktop
+#wget "https://download.opensuse.org/repositories/network:/im:/signal/Fedora_$(rpm -E %fedora)/network:im:signal.repo" -O "/etc/yum.repos.d/_opensuse_signal-desktop.repo"
+#rpm-ostree install signal-desktop
 
 #
 # Thorium browser
