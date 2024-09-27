@@ -1,7 +1,13 @@
 [Annotations]
-annotationToolType=0
-rectangleFillColor=255,0,0
-rectangleStrokeColor=0,0,0,0
+annotationToolType=8
+blurStrength=0.609375
+ellipseStrokeColor=255,0,0
+ellipseStrokeWidth=6
+freehandStrokeColor=0,170,0
+rectangleFillColor=22,22,35
+rectangleShadow=false
+rectangleStrokeColor=255,170,0,0
+textFontColor=255,255,255
 
 [General]
 autoSaveImage=true
@@ -12,7 +18,7 @@ captureMode=0
 includePointer=true
 
 [ImageSave]
-lastImageSaveLocation=file:///home/ruben/Pictures/Screenshots/Screenshot_20240724_150035.png
+lastImageSaveLocation=file:///home/ruben/Pictures/Screenshots/Screenshot_20240926_232350.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Categories=Network;Email;
+Comment=Send and Receive Email
+Exec=thunderbird %u
+GenericName=Email
+Icon=thunderbird
+MimeType=message/rfc822;x-scheme-handler/mailto;
+Name=Thunderbird
+StartupNotify=true
+Terminal=false
+TryExec=thunderbird
+Type=Application
+Version=1.0
+X-Desktop-File-Install-Version=0.26

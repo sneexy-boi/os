@@ -1,6 +1,6 @@
 [FileDialogSize]
-2 screens: Height=540
-2 screens: Width=960
+2 screens: Height=736
+2 screens: Width=1365
 
 [General]
 Allow Tab Scrolling=true
@@ -88,6 +88,7 @@ Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
 Text Font=JetBrainsMono Nerd Font,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Text Font Features=
 Word Wrap Marker=false
 
 [KTextEditor View]
@@ -113,7 +114,7 @@ Fold First Line=false
 Folding Bar=true
 Folding Preview=true
 Icon Bar=false
-Input Mode=1
+Input Mode=0
 Keyword Completion=true
 Line Modification=true
 Line Numbers=true
@@ -152,8 +153,8 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Replace History=,class^, =,config/scripts,config/scripts/,kde-extras
-Search History=animation,--background,first-child,tor,sync,",class*,*,:,config/scripts/,sernik,mv -r,kde-addons
+Replace History=/etc,,class^, =,config/scripts,config/scripts/,kde-extras
+Search History=.png,startupwm,etc,/usr/etc,animation,--background,first-child,tor,sync,",class*,*,:,config/scripts/,sernik,mv -r,kde-addons
 
 [Konsole]
 AutoSyncronizeMode=0
@@ -165,9 +166,15 @@ SetEditor=false
 
 [MainWindow]
 1366x768 screen: Window-Maximized=true
-2 screens: Height=860
-2 screens: Width=1397
+2 screens: Height=1046
+2 screens: Width=1011
 2 screens: Window-Maximized=false
+
+[PluginTextFilter]
+Completion list=sort
+Copy result=false
+Merge output=true
+New Document=true
 
 [filetree]
 editShade=110,80,65

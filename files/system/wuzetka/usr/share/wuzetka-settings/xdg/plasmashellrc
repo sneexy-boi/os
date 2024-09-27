@@ -3,9 +3,9 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Applets][33][Configuration]
-PreloadWeight=0
+PreloadWeight=10
 configMigrated=true
-popupHeight=301
+popupHeight=303
 popupWidth=374
 
 [Applets][33][Configuration][Appearance]
@@ -41,7 +41,7 @@ thickness=40
 floating=1
 
 [PlasmaViews][Panel 3][Defaults]
-thickness=30
+thickness=26
 
 [PlasmaViews][Panel 45]
 floating=1

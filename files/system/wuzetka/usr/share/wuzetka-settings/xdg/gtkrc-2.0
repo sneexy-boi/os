@@ -1,2 +1,5 @@
 # created by KDE Plasma, Fri Sep 27 11:42:31 2024
 #
+
+gtk-alternative-button-order = 1
+
