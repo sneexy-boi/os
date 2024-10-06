@@ -120,19 +120,18 @@ rm -f /usr/share/sddm/themes/sddm-astronaut-theme/background.png
 rm -f /usr/share/sddm/themes/sddm-astronaut-theme/README.md
 rm -rf /usr/share/sddm/themes/sddm-astronaut-theme/Previews
 rm -rf /usr/share/sddm/themes/sddm-astronaut-theme/Fonts
-sed -i 's/ScreenWidth="1920"//' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's/ScreenHeight="1080"//' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's/## Adjust to your resolution to help SDDM speed up on calculations//' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@HeaderText=""@HeaderText="erm. what the sigma?"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@PartialBlur="true"@PartialBlur="false"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@FullBlur=""@FullBlur="true"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@Font="Open Sans"@Font="Lexend"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
+#sed -i 's/ScreenWidth="1920"//' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
+#sed -i 's/ScreenHeight="1080"//' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
+sed -i 's@HeaderText=""@HeaderText="erm. what the sigma?"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
+sed -i 's@PartialBlur="true"@PartialBlur="false"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
+sed -i 's@FullBlur=""@FullBlur="true"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
+sed -i 's@Font="Open Sans"@Font="Lexend"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
 # catppuccinify
-sed -i 's@TextColor="#F8F8F2"@TextColor="#cdd6f4"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@HighlightColor="#343746"@HighlightColor="#a6e3a1"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@BackgroundColor="#21222C"@BackgroundColor="#1e1e2e"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@PlaceholderColor="#bbbbbb"@PlaceholderColor="#6c7086"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
-sed -i 's@SystemButtonsIconColor="#ffffff"@SystemButtonsIconColor="#cdd6f4"@g' /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
+sed -i 's@TextColor="#F8F8F2"@TextColor="#cdd6f4"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
+sed -i 's@HighlightColor="#343746"@HighlightColor="#a6e3a1"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
+sed -i 's@BackgroundColor="#21222C"@BackgroundColor="#1e1e2e"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
+sed -i 's@PlaceholderColor="#bbbbbb"@PlaceholderColor="#6c7086"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
+sed -i 's@SystemButtonsIconColor="#ffffff"@SystemButtonsIconColor="#cdd6f4"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/theme1.conf
 
 #
 # KDE Theme
