@@ -10,12 +10,9 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-    - type: containerfile
-      snippets:
-        # install rpmfusion repos
-        - RUN rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-${OS_VERSION}.noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${OS_VERSION}.noarch.rpm
-        # disable negativo17
-        - RUN sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/negativo17-fedora-multimedia.repo
+    - type: script
+      scripts:
+        - rpmfusion.sh
 
     - from-file: common/wuzetka/rpm-ostree.yml
     
