@@ -27,7 +27,6 @@ system:
     - com.obsproject.Studio.Plugin.Gstreamer
     - com.obsproject.Studio.Plugin.GStreamerVaapi
     - com.dec05eba.gpu_screen_recorder
-    - org.kde.kdenlive
     - org.tenacityaudio.Tenacity
     - org.gimp.GIMP
     - org.inkscape.Inkscape
@@ -37,6 +36,7 @@ system:
     - org.kde.krita
     - org.kde.kdenlive
     - org.tuxpaint.Tuxpaint # i'm not kidding when i say this tuxpaint is actually fucking goated look through https://tuxpaint.org/gallery/
+    - io.gitlab.adhami3310.Footage
 
     # (desktop) utilities
     - com.usebottles.bottles
