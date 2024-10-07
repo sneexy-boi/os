@@ -44,7 +44,8 @@ wget "https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-$(rp
 wget "https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite-multilib/repo/fedora-$(rpm -E %fedora)/kylegospo-bazzite-multilib-fedora-$(rpm -E %fedora).repo" -O "/etc/yum.repos.d/_copr_kylegospo-bazzite-multilib.repo"
 rpm-ostree install \
     joystickwake \
-    xwiimote-ng
+    xwiimote-ng \
+    xone-kmod
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-bazzite.repo
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-bazzite-multilib.repo
 

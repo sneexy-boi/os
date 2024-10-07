@@ -161,7 +161,6 @@ install:
 
   # akmods
   - akmod-xpadneo
-  - xone-kmod
 optfix:
   - floorp
   - zen
