@@ -43,5 +43,5 @@ modules:
       include:
         - zz1-wuzetka.gschema.override
 
-    - from-file: common/akmods.yml
+    #- from-file: common/akmods.yml
     - type: signing

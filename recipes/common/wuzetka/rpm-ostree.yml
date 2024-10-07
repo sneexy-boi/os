@@ -158,6 +158,10 @@ install:
   - lzip
   - qt5-qtwayland
   - qt6-qtwayland
+
+  # akmods
+  - akmod-xpadneo
+  - xone-kmod
 optfix:
   - floorp
   - zen
