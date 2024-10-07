@@ -17,6 +17,7 @@ modules:
       - ld.sh
       - qdbus.sh
       - posy-cursors.sh
+      - rpmfusion.sh
       - system-mazurek.sh
 
   - type: files
@@ -48,5 +49,5 @@ modules:
     include:
       - zz1-mazurek.gschema.override
 
-  - from-file: common/akmods.yml
+  #- from-file: common/akmods.yml
   - type: signing

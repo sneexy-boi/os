@@ -164,7 +164,6 @@ install:
     - android-tools
 
     # mpd
-    - mpd
     - mpdris2
     - ncmpcpp
 
