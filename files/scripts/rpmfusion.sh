@@ -15,7 +15,8 @@ sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/negativo17-fedora-multimedia.r
 
 # Install RPMFusion packages
 rpm-ostree install \
-    mpd
+    mpd \
+    v4l2loopback
 
 # Enable negativo17 repos
 sed -i 's@enabled=0@enabled=1@g' /etc/yum.repos.d/negativo17-fedora-multimedia.repo
