@@ -42,6 +42,7 @@ install:
   - nextcloud-client
   - nextcloud-client-dolphin
   - docker-compose
+  - syncthing
   
   # beets
   - beets
