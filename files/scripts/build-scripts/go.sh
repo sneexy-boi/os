@@ -4,7 +4,7 @@
 set -euo pipefail
 
 # Dependency and folder
-dnf install -y golang
+dnf install -y golang git
 mkdir -p /tmp/go-built/usr/bin
 go env -w GOBIN=/tmp/go-built/usr/bin
 
