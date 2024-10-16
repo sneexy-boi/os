@@ -50,12 +50,6 @@ sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-bazzite.repo
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-bazzite-multilib.repo
 
 #
-# Signal Desktop (RPM Package)
-#
-#wget "https://download.opensuse.org/repositories/network:/im:/signal/Fedora_$(rpm -E %fedora)/network:im:signal.repo" -O "/etc/yum.repos.d/_opensuse_signal-desktop.repo"
-#rpm-ostree install signal-desktop
-
-#
 # Thorium browser
 # NOTE: This breaks a lot because the developer tends to mark other releases as "latest". This causes this to break because it usually means the RPM we actually want isn't there.
 #THORIUM_VER=$(curl -sL https://api.github.com/repos/Alex313031/thorium/releases/latest | jq -r '.assets[] | select(.name? | match(".*_AVX2.rpm$")) | .browser_download_url')

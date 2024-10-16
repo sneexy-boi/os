@@ -11,9 +11,6 @@ repos:
 
   # wezterm terminal
   - https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-%OS_VERSION%/wezfurlong-wezterm-nightly-fedora-%OS_VERSION%.repo
-  
-  # cursors
-  - https://copr.fedorainfracloud.org/coprs/peterwu/rendezvous/repo/fedora-%OS_VERSION%/peterwu-rendezvous-fedora-%OS_VERSION%.repo
 
   # rom properties
   - https://copr.fedorainfracloud.org/coprs/kylegospo/rom-properties/repo/fedora-%OS_VERSION%/kylegospo-rom-properties-fedora-%OS_VERSION%.repo
@@ -50,6 +47,7 @@ install:
   - syncthingfileitemaction-qt6
   - syncthingctl-qt6
   - docker-compose
+  - zed
   
   # beets
   - beets
@@ -77,7 +75,7 @@ install:
   - trash-cli
 
   # themes
-  - bibata-cursor-themes
+  - bibata-cursor-theme
   - oxygen-sounds
   - pop-sound-theme
   - yaru-sound-theme
