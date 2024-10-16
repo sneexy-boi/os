@@ -4,3 +4,4 @@ base: main
 install:
     - xone
     - xpadneo
+    - v4l2loopback
