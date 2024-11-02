@@ -48,6 +48,7 @@ install:
   - syncthingctl-qt6
   - docker-compose
   - zed
+  - pipx
   
   # beets
   - beets
@@ -164,9 +165,6 @@ install:
   - lzip
   - qt5-qtwayland
   - qt6-qtwayland
-
-  # akmods
-  - akmod-xpadneo
 optfix:
   - floorp
   - zen
