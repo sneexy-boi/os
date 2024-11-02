@@ -44,12 +44,12 @@ make install DESTDIR=/tmp/kde-extras-built PREFIX='/usr'
 #
 # Burn My Windows
 #
-cd /tmp
-git clone --single-branch --depth=1 https://github.com/Schneegans/Burn-My-Windows.git
-cd Burn-My-Windows/kwin
-chmod +x build.sh
-./build.sh
-tar -zvxf burn_my_windows_kwin4.tar.gz -C /tmp/kde-extras-built/usr/share/kwin/effects --no-same-owner --no-same-permissions
+#cd /tmp
+#git clone --single-branch --depth=1 https://github.com/Schneegans/Burn-My-Windows.git
+#cd Burn-My-Windows/kwin
+#chmod +x build.sh
+#./build.sh
+#tar -zvxf burn_my_windows_kwin4.tar.gz -C /tmp/kde-extras-built/usr/share/kwin/effects --no-same-owner --no-same-permissions
 
 #
 # Smart Video Wallpaper Reborn
