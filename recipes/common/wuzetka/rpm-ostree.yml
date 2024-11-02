@@ -144,7 +144,7 @@ install:
   - kweather
   - kompare
   - okular
-  - power-profiles-daemon
+  #- power-profiles-daemon
 
   # kde libraries
   - kaccounts-integration
