@@ -30,6 +30,7 @@ install:
   - zen-browser-avx2
   - torbrowser-launcher
   - webapp-manager
+  - speedtest-cli
 
   # office
   - libreoffice
