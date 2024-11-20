@@ -35,12 +35,3 @@ install:
 
   # libraries and tools, misc.
   - lzip
-remove:
-  # default editors installed with fedora
-  - vim-data
-  - vim-minimal
-  - vim-filesystem
-  - vim-common
-  - vim-enhanced
-  - nano
-  - nano-default-editor
