@@ -22,5 +22,4 @@ modules:
           - source: system/kutia
             destination: /
 
-    - from-file: common/bling.yml
     - type: signing
