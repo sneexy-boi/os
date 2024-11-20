@@ -15,11 +15,11 @@ modules:
     - type: script
       scripts:
           - ld.sh
-          - system-kutia.sh
+          #- system-kutia.sh
 
-    #- type: files
-    #  files:
-    #      - source: system/kutia
-    #        destination: /
+    - type: files
+      files:
+          - source: system/kutia
+            destination: /
 
     - type: signing
