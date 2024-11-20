@@ -12,32 +12,32 @@ image-version: 41 # latest is also supported if you want new updates ASAP
 modules:
     - type: script
       scripts:
-        - terra.sh
+          - terra.sh
 
     - from-file: common/wuzetka/rpm-ostree.yml
-    
+
     - type: script
       scripts:
-        - ld.sh
-        - qdbus.sh
-        - posy-cursors.sh
-        - rpmfusion.sh
-        - system-wuzetka.sh
+          - ld.sh
+          - qdbus.sh
+          - posy-cursors.sh
+          - rpmfusion.sh
+          - system-wuzetka.sh
 
     - type: files
       files:
-        - source: system/wuzetka
-          destination: /
+          - source: system/wuzetka
+            destination: /
 
     - type: containerfile
       snippets:
-        # Replace default sddm background
-        - RUN ln -sf /usr/share/backgrounds/catppuccin/black-hole-mocha.png /usr/share/sddm/themes/sddm-astronaut-theme/background.png
-        # ensure unfuck_music script is executable
-        - RUN chmod +x /usr/bin/unfuck_music
-        # Copy self compiled software and allat
-        - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/usr /usr
-        - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/etc /etc
+          # Replace default sddm background
+          - RUN ln -sf /usr/share/backgrounds/catppuccin/black-hole-mocha.png /usr/share/sddm/themes/sddm-astronaut-theme/background.png
+          # ensure unfuck_music script is executable
+          - RUN chmod +x /usr/bin/unfuck_music
+          # Copy self compiled software and allat
+          - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/usr /usr
+          - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/etc /etc
 
     - from-file: common/wuzetka/flatpaks.yml
     - from-file: common/bling.yml
@@ -45,7 +45,7 @@ modules:
 
     - type: gschema-overrides
       include:
-        - zz1-wuzetka.gschema.override
+          - zz1-wuzetka.gschema.override
 
     #- from-file: common/akmods.yml
     - type: signing

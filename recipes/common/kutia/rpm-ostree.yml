@@ -1,0 +1,47 @@
+type: rpm-ostree
+install:
+  # web utilities 
+  - speedtest-cli
+
+  # other software
+  - docker-compose
+  - pipx
+
+  # environment
+  - crontabs
+  - trash-cli
+
+  # terminals and some modern unix utilities
+  - bat
+  - duf
+  - fastfetch
+  - fd-find
+  - fzf
+  - git-delta
+  - eza
+  - neovim
+  - ripgrep
+  - sd
+  - zoxide
+  - ImageMagick
+
+  # console utilities
+  - btop
+  - ffmpeg
+  - yt-dlp
+  - figlet
+  - gdisk
+  - pv
+
+  # libraries and tools, misc.
+  - lzip
+remove:
+  # default editors installed with fedora
+  - vim-data
+  - vim-minimal
+  - vim-filesystem
+  - vim-common
+  - vim-enhanced
+  - nano
+  - nano-default-editor
+  - default-editor

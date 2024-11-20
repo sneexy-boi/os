@@ -1,0 +1,26 @@
+# image will be published to ghcr.io/sernik-tech/<name>
+name: kutia
+# description will be included in the image's metadata
+description: sneexy's personal and opinionated ucore image for server usage
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/ucore-minimal
+image-version: 41 # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+    - from-file: common/kutia/rpm-ostree.yml
+
+    - type: script
+      scripts:
+          - ld.sh
+          - system-kutia.sh
+
+    - type: files
+      files:
+          - source: system/kutia
+            destination: /
+
+    - from-file: common/bling.yml
+    - type: signing
