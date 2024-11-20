@@ -29,6 +29,7 @@ install:
 
   # console utilities
   - btop
+  - git
   - yt-dlp
   - figlet
   - gdisk
