@@ -6,7 +6,6 @@ install:
   # other software
   - docker-compose
   - podman-docker
-  - podman-plugins
   - pipx
 
   # environment
@@ -29,7 +28,6 @@ install:
 
   # console utilities
   - btop
-  - ffmpeg
   - yt-dlp
   - figlet
   - gdisk
