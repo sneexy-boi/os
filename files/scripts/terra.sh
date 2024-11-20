@@ -6,5 +6,5 @@ set -euo pipefail
 set -x
 
 # Add Terra repositories and installs the repo package
-curl -o /etc/yum.repos.d/terra.repo "https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo"
+curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
 rpm-ostree install terra-release
