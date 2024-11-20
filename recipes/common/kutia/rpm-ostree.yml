@@ -6,6 +6,7 @@ install:
   # other software
   - docker-compose
   - podman-docker
+  - caddy
   - pipx
 
   # environment
