@@ -4,7 +4,8 @@ install:
   - speedtest-cli
 
   # other software
-  - podman-compose
+  - docker-compose
+  - podman-docker
   - podman-plugins
   - pipx
 
