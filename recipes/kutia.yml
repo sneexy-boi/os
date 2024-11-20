@@ -17,9 +17,9 @@ modules:
           - ld.sh
           - system-kutia.sh
 
-    - type: files
-      files:
-          - source: system/kutia
-            destination: /
+    #- type: files
+    #  files:
+    #      - source: system/kutia
+    #        destination: /
 
     - type: signing
