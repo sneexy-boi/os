@@ -5,6 +5,7 @@ install:
 
   # other software
   - docker-compose
+  - wget
   - caddy
   - pipx
 
