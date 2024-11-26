@@ -1,6 +1,6 @@
 [FileDialogSize]
 2 screens: Height=736
-2 screens: Width=1365
+2 screens: Width=1363
 
 [General]
 Allow Tab Scrolling=true
@@ -18,6 +18,7 @@ Mouse back button action=0
 Mouse forward button action=0
 Open New Tab To The Right Of Current=false
 Output History Limit=100
+Output With Date=false
 Recent File List Entry Count=10
 Restore Window Configuration=true
 SDI Mode=false
@@ -29,7 +30,7 @@ Show Symbol In Navigation Bar=true
 Show Tab Bar=true
 Show Tabs Close Button=true
 Show Url Nav Bar=true
-Show output view for message type=1
+Show output view for message type=0
 Show text for left and right sidebar=false
 Show welcome view for new window=true
 Startup Session=manual
@@ -134,14 +135,14 @@ Shoe Line Ending Type in Statusbar=false
 Show Documentation With Completion=true
 Show File Encoding=true
 Show Folding Icons On Hover Only=true
-Show Line Count=false
+Show Line Count=true
 Show Scrollbars=0
 Show Statusbar Dictionary=true
 Show Statusbar Highlighting Mode=true
 Show Statusbar Input Mode=true
 Show Statusbar Line Column=true
 Show Statusbar Tab Settings=true
-Show Word Count=false
+Show Word Count=true
 Smart Copy Cut=true
 Statusbar Line Column Compact Mode=true
 Text Drag And Drop=true
@@ -154,7 +155,7 @@ Word Completion Remove Tail=true
 
 [KTextEditor::Search]
 Replace History=/etc,,class^, =,config/scripts,config/scripts/,kde-extras
-Search History=.png,startupwm,etc,/usr/etc,animation,--background,first-child,tor,sync,",class*,*,:,config/scripts/,sernik,mv -r,kde-addons
+Search History=cMKQ3G14Pccae38YgP5M9a512tDm3E,matrix.,.png,startupwm,etc,/usr/etc,animation,--background,first-child,tor,sync,",class*,*,:,config/scripts/,sernik,mv -r,kde-addons
 
 [Konsole]
 AutoSyncronizeMode=0
@@ -166,9 +167,9 @@ SetEditor=false
 
 [MainWindow]
 1366x768 screen: Window-Maximized=true
-2 screens: Height=1046
+2 screens: Height=910
 2 screens: Width=1011
-2 screens: Window-Maximized=false
+2 screens: Window-Maximized=true
 
 [PluginTextFilter]
 Completion list=sort

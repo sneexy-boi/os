@@ -31,6 +31,14 @@ BorderActivate=9
 InScale=0.09999999999999991
 OutScale=0.09999999999999991
 
+[Effect-shakecursor]
+Magnification=2
+
+[Effect-wobblywindows]
+Drag=100
+MoveFactor=25
+Stiffness=50
+
 [Effect-ًRound-Corners]
 ActiveOutlineUseCustom=true
 ActiveOutlineUsePalette=false

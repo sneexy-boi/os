@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Network;InstantMessaging;
+Comment=Yet another matrix client with simple, elegant and secure interface.
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=cinny in.cinny.Cinny
+Icon=in.cinny.Cinny
+Keywords=Matrix;matrix.org;chat;irc;communications;talk;riot;element;fractal;voip;
+Name=Cinny
+Terminal=false
+Type=Application
+Version=1.0
+X-Flatpak=in.cinny.Cinny
+X-Purism-FormFactor=Workstation;Mobile;
