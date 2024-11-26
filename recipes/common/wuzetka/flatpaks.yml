@@ -10,7 +10,7 @@ system:
     - org.nicotine_plus.Nicotine
     - org.gajim.Gajim
     - org.squidowl.halloy
-    - org.kde.neochat
+    - in.cinny.Cinny
     - chat.revolt.RevoltDesktop
     - org.signal.Signal
     - dev.vencord.Vesktop
