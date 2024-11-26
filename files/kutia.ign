@@ -12,15 +12,6 @@
           "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCtpoR3fGHuHv55u1rhY4YVm4rz49/i78IQa3Lv7GsaJXse5nswkBW2fl4zXjBOorKBLPDBqgYZDFOxbjXTQq+zTrEN3qggp5W1kQXMuTqh3iyaseavwt7FM70IziAOkfYyJdAvLsoBymFLLXnVSYY5ZdxiRK6S+1ud64OAw2/wigk5KxPEjnL1Q8a9S1xpCWLVBNNTL0qYneFezHApN3lijeotcBVYhpQmxtifebeeom0J7KE3ivYW/mh7tTk2DZVAQPRKPC1Szk2TdWuUw8i5Ybdjc8lSNgDHBFzGexxIDeRJMaaQP5wDdTxIrIWAIXREkOd4soijaK09bRD4d4Xi6qeCRWoARrsyEzWASpXpNN7yVta6JVe1r+QdNYFol9K0ojqQHsjYJpskTpBCXCLlmQCzRcAuAyf9Poj+l3Z8L65/T7Mucm5+/3Z3HQK99sDx0i4NmueBiDrkdm159K8w/iG08d9H4kD0wu1RAaIzCkKENF/LS9Ut207w0qbwak=",
           "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID65NBwAc2BnxVem+AMtfvUMwcA+4bEC94VmKXgDKbkY"
         ]
-      },
-      {
-        "name": "ruben",
-        "passwordHash": "$y$j9T$XJwNYBUmwYJzvBjAr5t1T0$FHb/a2Tl4rErzhq/Godfz2XrihR0Ogu55e/Rc.jCML5",
-        "sshAuthorizedKeys": [
-          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO+V3b6oKMTLEBq8AKjdNF5ZwJGXuWTrS2u9QaEypBYP",
-          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCtpoR3fGHuHv55u1rhY4YVm4rz49/i78IQa3Lv7GsaJXse5nswkBW2fl4zXjBOorKBLPDBqgYZDFOxbjXTQq+zTrEN3qggp5W1kQXMuTqh3iyaseavwt7FM70IziAOkfYyJdAvLsoBymFLLXnVSYY5ZdxiRK6S+1ud64OAw2/wigk5KxPEjnL1Q8a9S1xpCWLVBNNTL0qYneFezHApN3lijeotcBVYhpQmxtifebeeom0J7KE3ivYW/mh7tTk2DZVAQPRKPC1Szk2TdWuUw8i5Ybdjc8lSNgDHBFzGexxIDeRJMaaQP5wDdTxIrIWAIXREkOd4soijaK09bRD4d4Xi6qeCRWoARrsyEzWASpXpNN7yVta6JVe1r+QdNYFol9K0ojqQHsjYJpskTpBCXCLlmQCzRcAuAyf9Poj+l3Z8L65/T7Mucm5+/3Z3HQK99sDx0i4NmueBiDrkdm159K8w/iG08d9H4kD0wu1RAaIzCkKENF/LS9Ut207w0qbwak=",
-          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID65NBwAc2BnxVem+AMtfvUMwcA+4bEC94VmKXgDKbkY"
-        ]
       }
     ]
   },
@@ -35,12 +26,12 @@
   "systemd": {
     "units": [
       {
-        "contents": "[Unit]\nDescription=uCore autorebase to unsigned OCI and reboot\nConditionPathExists=!/etc/ucore-autorebase/unverified\nConditionPathExists=!/etc/ucore-autorebase/signed\nAfter=network-online.target\nWants=network-online.target\n[Service]\nType=oneshot\nStandardOutput=journal+console\nExecStart=/usr/bin/rpm-ostree rebase --bypass-driver ostree-unverified-registry:ghcr.io/sneexy-boi/kutia:stable\nExecStart=/usr/bin/touch /etc/ucore-autorebase/unverified\nExecStart=/usr/bin/systemctl disable ucore-unsigned-autorebase.service\nExecStart=/usr/bin/systemctl reboot\n[Install]\nWantedBy=multi-user.target\n",
+        "contents": "[Unit]\nDescription=uCore autorebase to unsigned OCI and reboot\nConditionPathExists=!/etc/ucore-autorebase/unverified\nConditionPathExists=!/etc/ucore-autorebase/signed\nAfter=network-online.target\nWants=network-online.target\n[Service]\nType=oneshot\nStandardOutput=journal+console\nExecStart=/usr/bin/rpm-ostree rebase --bypass-driver ostree-unverified-registry:ghcr.io/sneexy-boi/kutia:latest\nExecStart=/usr/bin/touch /etc/ucore-autorebase/unverified\nExecStart=/usr/bin/systemctl disable ucore-unsigned-autorebase.service\nExecStart=/usr/bin/systemctl reboot\n[Install]\nWantedBy=multi-user.target\n",
         "enabled": true,
         "name": "ucore-unsigned-autorebase.service"
       },
       {
-        "contents": "[Unit]\nDescription=uCore autorebase to signed OCI and reboot\nConditionPathExists=/etc/ucore-autorebase/unverified\nConditionPathExists=!/etc/ucore-autorebase/verified\nAfter=network-online.target\nWants=network-online.target\n[Service]\nType=oneshot\nStandardOutput=journal+console\nExecStart=/usr/bin/rpm-ostree rebase --bypass-driver ostree-image-signed:docker://ghcr.io/sneexy-boi/kutia:stable\nExecStart=/usr/bin/touch /etc/ucore-autorebase/signed\nExecStart=/usr/bin/systemctl disable ucore-signed-autorebase.service\nExecStart=/usr/bin/systemctl reboot\n[Install]\nWantedBy=multi-user.target\n",
+        "contents": "[Unit]\nDescription=uCore autorebase to signed OCI and reboot\nConditionPathExists=/etc/ucore-autorebase/unverified\nConditionPathExists=!/etc/ucore-autorebase/verified\nAfter=network-online.target\nWants=network-online.target\n[Service]\nType=oneshot\nStandardOutput=journal+console\nExecStart=/usr/bin/rpm-ostree rebase --bypass-driver ostree-image-signed:docker://ghcr.io/sneexy-boi/kutia:latest\nExecStart=/usr/bin/touch /etc/ucore-autorebase/signed\nExecStart=/usr/bin/systemctl disable ucore-signed-autorebase.service\nExecStart=/usr/bin/systemctl reboot\n[Install]\nWantedBy=multi-user.target\n",
         "enabled": true,
         "name": "ucore-signed-autorebase.service"
       }
