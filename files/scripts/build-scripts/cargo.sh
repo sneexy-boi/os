@@ -23,6 +23,12 @@ cargo install sheldon --root /tmp/cargo-built/usr
 # Krabby - https://github.com/yannjor/krabby
 cargo install krabby --root /tmp/cargo-built/usr
 
+# inori - https://github.com/eshrh/inori
+cargo install inori --root /tmp/cargo-built/usr
+
+# Rusty Music Player Client - https://github.com/mierak/rmpc
+cargo install rmpc --root /tmp/cargo-built/usr
+
 # MPD Discord RPC - https://github.com/JakeStanger/mpd-discord-rpc
 cargo install mpd-discord-rpc --root /tmp/cargo-built/usr
 
