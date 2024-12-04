@@ -6,6 +6,9 @@ repos:
   # zen browser
   - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser-fedora-%OS_VERSION%.repo
 
+  # ungoogled chromium
+  - https://copr.fedorainfracloud.org/coprs/wojnilowicz/ungoogled-chromium/repo/fedora-%OS_VERSION%/wojnilowicz-ungoogled-chromium-fedora-%OS_VERSION%.repo
+
   # hblock
   - https://copr.fedorainfracloud.org/coprs/pesader/hblock/repo/fedora-%OS_VERSION%/pesader-hblock-fedora-%OS_VERSION%.repo
 
@@ -20,16 +23,13 @@ repos:
 
   # tailscale
   - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-
-  # linux mint's webapp/pwa manager
-  - https://copr.fedorainfracloud.org/coprs/kylegospo/webapp-manager/repo/fedora-%OS_VERSION%/kylegospo-webapp-manager-fedora-%OS_VERSION%.repo
 install:
   # web browsers, related web utilities (layered directly because its both less of a hassle and also currently more secure than flatpak)
   - firefox
   - floorp
   - zen-browser-avx2
+  - ungoogled-chromium
   - torbrowser-launcher
-  - webapp-manager
   - speedtest-cli
 
   # office
