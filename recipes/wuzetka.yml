@@ -14,7 +14,16 @@ modules:
       scripts:
           - terra.sh
 
+    - type: bling
+      install:
+          - rpmfusion
+
     - from-file: common/wuzetka/rpm-ostree.yml
+
+    - type: containerfile
+      snippets:
+          # install packages from rpmfusion repos
+          - RUN rpm-ostree install mpd
 
     - type: script
       scripts:
@@ -44,13 +53,7 @@ modules:
       install:
           - dconf-update-service
           - ublue-update
-          - rpmfusion
           - brew
-
-    - type: containerfile
-      snippets:
-          # install packages from rpmfusion repos
-          - RUN rpm-ostree install mpd
 
     - from-file: common/wuzetka/flatpaks.yml
     - from-file: common/fonts.yml
