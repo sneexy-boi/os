@@ -33,6 +33,10 @@ modules:
           # - rpmfusion.sh
           - system-wuzetka.sh
 
+    - type: brew
+      nofile-limits: true
+      brew-analytics: false
+
     - type: files
       files:
           - source: system/wuzetka
@@ -53,7 +57,6 @@ modules:
       install:
           - dconf-update-service
           - ublue-update
-          - brew
 
     - from-file: common/wuzetka/flatpaks.yml
     - from-file: common/fonts.yml
