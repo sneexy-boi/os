@@ -1,8 +1,5 @@
 # configure what to pull in from ublue-os/bling
 type: bling
 install:
-    # a service unit that updates the dconf db on boot
     - dconf-update-service
-
-    # ublue's custom updater
     - ublue-update

@@ -21,7 +21,7 @@ modules:
           - ld.sh
           - qdbus.sh
           - posy-cursors.sh
-          - rpmfusion.sh
+          # - rpmfusion.sh
           - system-wuzetka.sh
 
     - type: files
@@ -32,15 +32,27 @@ modules:
     - type: containerfile
       snippets:
           # Replace default sddm background
-          - RUN ln -sf /usr/share/backgrounds/catppuccin/black-hole-mocha.png /usr/share/sddm/themes/sddm-astronaut-theme/background.png
+          - RUN rm -f /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/1.png
+          - RUN ln -sf /usr/share/backgrounds/catppuccin/black-hole-mocha.png /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/1.png
           # ensure unfuck_music script is executable
           - RUN chmod +x /usr/bin/unfuck_music
           # Copy self compiled software and allat
           - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/usr /usr
           - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/etc /etc
 
+    - type: bling
+      install:
+          - dconf-update-service
+          - ublue-update
+          - rpmfusion
+          - brew
+
+    - type: containerfile
+      snippets:
+          # install packages from rpmfusion repos
+          - RUN rpm-ostree install mpd
+
     - from-file: common/wuzetka/flatpaks.yml
-    - from-file: common/bling.yml
     - from-file: common/fonts.yml
 
     - type: gschema-overrides
