@@ -9,6 +9,7 @@ set -x
 systemctl enable hblock.timer
 systemctl enable tailscaled.service
 systemctl enable libvirtd.service
+systemctl enable dnsmasq.service
 
 # Ensure all required/used folders are created
 mkdir -p /usr/share/sddm/themes
