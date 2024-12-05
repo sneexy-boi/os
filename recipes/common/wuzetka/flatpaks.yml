@@ -11,6 +11,7 @@ system:
     - org.gajim.Gajim
     - org.squidowl.halloy
     - in.cinny.Cinny
+    - im.nheko.Nheko
     - chat.revolt.RevoltDesktop
     - org.signal.Signal
     - dev.vencord.Vesktop

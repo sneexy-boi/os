@@ -135,6 +135,7 @@ install:
   - rom-properties-kf6
   - k3b
   - kate
+  - kalc
   - ksystemlog
   - filelight
   - gwenview
