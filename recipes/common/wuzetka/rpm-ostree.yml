@@ -19,7 +19,7 @@ repos:
   - https://copr.fedorainfracloud.org/coprs/kylegospo/rom-properties/repo/fedora-%OS_VERSION%/kylegospo-rom-properties-fedora-%OS_VERSION%.repo
 
   # syncthingtray
-  w- https://download.opensuse.org/repositories/home:mkittler/Fedora_%OS_VERSION%/home:mkittler.repo
+  - https://download.opensuse.org/repositories/home:mkittler/Fedora_%OS_VERSION%/home:mkittler.repo
 
   # tailscale
   - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
