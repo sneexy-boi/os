@@ -19,7 +19,7 @@ repos:
   - https://copr.fedorainfracloud.org/coprs/kylegospo/rom-properties/repo/fedora-%OS_VERSION%/kylegospo-rom-properties-fedora-%OS_VERSION%.repo
 
   # syncthingtray
-  #- https://download.opensuse.org/repositories/home:mkittler/Fedora_%OS_VERSION%/home:mkittler.repo
+  w- https://download.opensuse.org/repositories/home:mkittler/Fedora_%OS_VERSION%/home:mkittler.repo
 
   # tailscale
   - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
@@ -43,10 +43,10 @@ install:
   - nextcloud-client
   - nextcloud-client-dolphin
   - syncthing
-  #- syncthingtray-qt6
-  #- syncthingplasmoid-qt6
-  #- syncthingfileitemaction-qt6
-  #- syncthingctl-qt6
+  - syncthingtray-qt6
+  - syncthingplasmoid-qt6
+  - syncthingfileitemaction-qt6
+  - syncthingctl-qt6
   - docker-compose
   - zed
   - pipx
@@ -135,7 +135,7 @@ install:
   - rom-properties-kf6
   - k3b
   - kate
-  - kalc
+  - kalk
   - ksystemlog
   - filelight
   - gwenview
