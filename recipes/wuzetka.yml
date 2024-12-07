@@ -33,10 +33,6 @@ modules:
           # - rpmfusion.sh
           - system-wuzetka.sh
 
-    - type: brew
-      nofile-limits: true
-      brew-analytics: false
-
     - type: files
       files:
           - source: system/wuzetka
