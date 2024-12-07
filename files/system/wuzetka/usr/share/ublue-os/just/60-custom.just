@@ -10,6 +10,9 @@ wuzetka-setup:
     # Add user to proper groups
     echo 'Adding user to necessary groups...'
     sudo usermod -aG libvirt $USER
+    # Minor libvirt fixes/modifications
+    echo 'Making libvirt modifications...'
+    sudo restorecon -rv /var/log/libvirt/
     # Symlink relative theme folders to fix certain issues
     echo 'Symlinking themes...'
     THEME_DIR=${HOME}/.local/share/themes/Catppuccin-Mocha-Compact-Green-Dark
