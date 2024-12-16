@@ -56,6 +56,7 @@ system:
     - io.github.lainsce.Emulsion
     - com.bitwarden.desktop
     - com.github.qarmin.szyszka
+    - rs.ruffle.Ruffle
 
     # gaming
     - com.github.k4zmu2a.spacecadetpinball
