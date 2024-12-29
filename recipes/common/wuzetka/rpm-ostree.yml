@@ -75,7 +75,10 @@ install:
   - hblock
   - wl-clipboard
   - trash-cli
+
+  # python modules
   - python3-colorama
+  - python3-dateutil
 
   # themes
   - bibata-cursor-theme
