@@ -110,6 +110,7 @@ install:
 
   # terminals and some modern unix utilities
   - wezterm
+  - ghostty
   - kitty
   - bat
   - duf
