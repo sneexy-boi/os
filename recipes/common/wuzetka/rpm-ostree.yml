@@ -109,7 +109,7 @@ install:
   - ncmpcpp
 
   # terminals and some modern unix utilities
-  - wezterm
+  - wezterm-nightly
   - ghostty
   - kitty
   - bat
