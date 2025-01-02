@@ -12,9 +12,6 @@ repos:
   # hblock
   - https://copr.fedorainfracloud.org/coprs/pesader/hblock/repo/fedora-%OS_VERSION%/pesader-hblock-fedora-%OS_VERSION%.repo
 
-  # wezterm terminal
-  - https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-%OS_VERSION%/wezfurlong-wezterm-nightly-fedora-%OS_VERSION%.repo
-
   # rom properties
   - https://copr.fedorainfracloud.org/coprs/kylegospo/rom-properties/repo/fedora-%OS_VERSION%/kylegospo-rom-properties-fedora-%OS_VERSION%.repo
 
@@ -109,7 +106,6 @@ install:
   - ncmpcpp
 
   # terminals and some modern unix utilities
-  - wezterm-nightly
   - ghostty
   - kitty
   - bat

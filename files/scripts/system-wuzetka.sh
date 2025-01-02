@@ -61,6 +61,12 @@ sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-bazzite-multil
 #sed -i 's@/opt/chromium.org/thorium/thorium_shell@/usr/lib/opt/chromium.org/thorium/thorium_shell@g' /usr/bin/thorium-shell
 
 #
+# WezTerm
+#
+curl -sL -o /tmp/wezterm.rpm "https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-fedora40.rpm"
+rpm-ostree install /tmp/wezterm.rpm
+
+#
 # flac2opus
 #
 curl -sL -o /usr/bin/flac2opus "https://raw.githubusercontent.com/SimonTeixidor/flac2opus/master/flac2opus.sh"
