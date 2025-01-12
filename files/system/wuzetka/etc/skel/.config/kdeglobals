@@ -134,7 +134,7 @@ ForegroundVisited=203, 166, 247
 
 [DirSelect Dialog]
 DirSelectDialog Size=1287,702
-History Items[$e]=file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/Sharkey-Documentation,file:$HOME/Git/sneexy/Sharkey-Documentation,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/sharkey-tweaks,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Podman/caddy/html,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/sharkey-tweaks,file:$HOME/Git/sneexy/pages,file:$HOME/Nextcloud/College/ITSE-1411 - Begin Web Page Program/!!!!FINAL_PROJECT,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Nextcloud/College/ITSE-1411 - Begin Web Page Program/!!!!FINAL_PROJECT,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/sharkey-tweaks,file:$HOME/Podman/caddy/html,file:$HOME/Git/sneexy/pages,file:$HOME/Nextcloud/College/ITSE-1411 - Begin Web Page Program/Week 4/html04,file:$HOME,file:$HOME/Nextcloud,file:$HOME/Downloads,file:$HOME/Podman/caddy/html,file:$HOME/Git/sneexy/pages,file:///var/home/ruben/Nextcloud/Obsidian/Wreckless,file:$HOME/Downloads/yoshistickers/blue/,file:$HOME/Downloads/yoshistickers/pink,file:$HOME/Downloads/yoshistickers/blue,file:$HOME/Downloads/yoshistickers/green,file:$HOME/Downloads/yoshistickers/pink,file:///var/home/ruben/Downloads/yoshistickers/purple,file:///var/home/ruben/Downloads/yoshistickers/red,file:$HOME/Downloads/yoshistickers/red,file:$HOME/Downloads/yoshistickers/yellow,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/pages,file:///usr/share/backgrounds/catppuccin,file:$HOME/Git/sneexy/copr/floorp,file:$HOME/.local/share/Steam/steamapps/compatdata/1222670/pfx/drive_c/users/steamuser/Documents/Electronic Arts/The Sims 4/Mods,file:$HOME/.local/share/Steam/steamapps/compatdata/1222670/pfx/drive_c/users/steamuser/Documents/Electronic Arts/The Sims 4/Mods,file:$HOME/Wine,file:$HOME/Games,file:$HOME/Git/sneexy/pages,file:$HOME/Downloads,file:$HOME/Downloads,file:$HOME/ISOs,file:$HOME/Games,file:$HOME/Downloads
+History Items[$e]=file:$HOME/Git/sneexy/copr,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/copr,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/copr,file:$HOME/Git/sneexy/copr,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/pages,file:$HOME/Downloads/Atari - 7800 (BIN),file:$HOME/Downloads/Atari - 5200,file:$HOME/Downloads/Atari - 2600,file:$HOME/Downloads/Nintendo - Nintendo 64 (BigEndian),file:$HOME/Downloads/Nintendo - Game Boy Advance,file:///var/home/ruben/Downloads/ROMs/Mega Drive - Genesis,file:///var/home/ruben/Downloads/ROMs/Super Nintendo Entertainment System,file:///var/home/ruben/Downloads/ROMs/Nintendo Entertainment System,file:///var/home/ruben/Downloads/ROMs/Game Boy,file:///var/home/ruben/Downloads/ROMs/Game Boy Color,file:$HOME/Git/sneexy/copr,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/copr,file:$HOME/Git/sneexy/pages,file:$HOME/Podman/caddy/html,file:///var/home/ruben/Games/ROMs/Wii,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Podman/caddy/corvidLifeTesting,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/copr,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/copr,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/pagestest,file:$HOME/Git/sneexy/pages,file:$HOME/Git/sneexy/copr,file:$HOME/Git/sneexy/bluebuild-custom,file:$HOME/Git/sneexy/Documentation,file:$HOME/Git/sneexy/bluebuild-custom
 
 [General]
 ColorSchemeHash=c450872dc068bdb11b46a0d8e2343caf9b60972f
@@ -144,10 +144,10 @@ UseSystemBell=true
 XftHintStyle=hintslight
 XftSubPixel=none
 fixed=JetBrainsMono Nerd Font,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-font=Lexend,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-menuFont=Lexend,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-smallestReadableFont=Lexend,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-toolBarFont=Lexend,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=Inter,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=Inter,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=Inter,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=Inter,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
 Theme=Papirus-Dark
@@ -181,7 +181,7 @@ Theme=oxygen
 [WM]
 activeBackground=30,30,46
 activeBlend=205,214,244
-activeFont=Lexend,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeFont=Inter,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=205,214,244
 inactiveBackground=17,17,27
 inactiveBlend=166,173,200
