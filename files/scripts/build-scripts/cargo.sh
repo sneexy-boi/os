@@ -15,7 +15,7 @@ cd atuin/crates/atuin
 cargo install --path . --root /tmp/cargo-built/usr
 
 # Starship - https://starship.rs/
-cargo install starship --root /tmp/cargo-built/usr
+cargo install starship --locked --root /tmp/cargo-built/usr
 
 # Sheldon - https://github.com/rossmacarthur/sheldon
 cargo install sheldon --root /tmp/cargo-built/usr
