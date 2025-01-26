@@ -69,6 +69,18 @@ ActiveOutlineUsePalette=true
 InactiveOutlineThickness=2
 OutlineThickness=2
 
+[Round-Corners]
+ActiveOutlineAlpha=255
+ActiveOutlineUseCustom=false
+ActiveOutlineUsePalette=true
+InactiveOutlineAlpha=255
+InactiveOutlineThickness=2
+InactiveOutlineUseCustom=false
+InactiveOutlineUsePalette=true
+InactiveSecondOutlineThickness=0
+OutlineThickness=2
+SecondOutlineThickness=0
+
 [SecondOutline]
 ActiveSecondOutlineUseCustom=false
 ActiveSecondOutlineUsePalette=true
