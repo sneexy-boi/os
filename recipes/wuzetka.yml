@@ -58,9 +58,19 @@ modules:
     - from-file: common/fonts.yml
 
     - type: systemd
+      system:
+        enabled:
+          - hblock.timer
+          - tailscaled.service
+          - libvirtd.service
+          - dnsmasq.service
       user:
         enabled:
           - systemd-tmpfiles-setup.service
+          - mpd.service
+          - mpDris2.service
+          - mpd-discord-rpc.service
+          - rescrobbled.service
 
     - type: gschema-overrides
       include:
