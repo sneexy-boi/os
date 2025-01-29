@@ -15,6 +15,7 @@ system:
     - chat.revolt.RevoltDesktop
     - org.signal.Signal
     - dev.vencord.Vesktop
+    - io.github.moonlight_mod.moonlight-installer
     - dev.geopjr.Tuba
     - org.kde.tokodon
     - io.github.kukuruzka165.materialgram
@@ -84,3 +85,5 @@ user:
   repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
   repo-name: flathub-user
   repo-title: "Flathub (User)"
+  install:
+    - com.discordapp.Discord # we use the moonlight mod, which requires discord installed as a user package

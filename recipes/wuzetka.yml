@@ -57,6 +57,11 @@ modules:
     - from-file: common/wuzetka/flatpaks.yml
     - from-file: common/fonts.yml
 
+    - type: systemd
+      user:
+        enabled:
+          - systemd-tmpfiles-setup.service
+
     - type: gschema-overrides
       include:
           - zz1-wuzetka.gschema.override
