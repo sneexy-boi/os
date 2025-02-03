@@ -1,26 +1,23 @@
 # bluebuild-custom &nbsp; [![bluebuild build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml) [![containers build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml)
 
-Custom [BlueBuild](https://blue-build.org) image builds for myself, which is based on [Universal Blue](https://universal-blue.org) which is based on Immutable [Fedora](https://fedoraproject.org) images.
+custom [BlueBuild](https://blue-build.org) images for myself, based on [Universal Blue](https://universal-blue.org) which are based on immutable [Fedora](https://fedoraproject.org) images.
 
-These images are heavily opinionated and customized, but descriptions of each image is below if you want to use them or fork them.
+these images are heavily opinionated and customized, but descriptions of each image is below if you want to use them or fork them.
 
-Common features shared between these images:
+common features shared between these images:
 
-- DNS server/settings overrides
-- Completely customized desktops/setups
-- Custom extensions and a lot of additional software (that I use daily)
+- dns server/settings overrides
+- completely customized desktops/setups
+- custom desktop extensions and a lot of additional software (that i use daily)
+- added rizz and gyatts
 
-## Wuzetka
+## wuzetka
 
-Image name: `wuzetka`
+customized image based on Fedora Kinoite, which uses the KDE Plasma desktop. features configured desktop with extensions and also a customized sddm login screen that greets you with "erm. what the sigma?"
 
-Customized image based on Fedora Kinoite, which uses the KDE Plasma desktop.
+## kutia
 
-## Mazurek
-
-Image name: `mazurek`
-
-Customized image based on the Fedora base image, which includes the niri window manager and an entirely customized and personal experience.
+customized coreos image, some extra software is added but i ended up personally not using this image at all. so probably like don't use this one.
 
 ## Installation
 
