@@ -166,6 +166,7 @@ install:
   - lzip
   - qt5-qtwayland
   - qt6-qtwayland
+  - qt6-qtlocation
 optfix:
   - floorp
   - zen
