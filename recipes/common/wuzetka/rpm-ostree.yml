@@ -163,6 +163,7 @@ install:
   - fontconfig
   - hunspell-en
   - gnome-themes-extra
+  - util-linux
   - lzip
   - qt5-qtwayland
   - qt6-qtwayland
