@@ -13,5 +13,8 @@ Seen=true
 [Applications][io.github.martinrotter.rssguard]
 Seen=true
 
+[Applications][org.fedoraproject.MediaWriter]
+Seen=true
+
 [Applications][org.qbittorrent.qBittorrent]
 Seen=true

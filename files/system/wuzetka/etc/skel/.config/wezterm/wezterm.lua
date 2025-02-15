@@ -10,10 +10,10 @@ config.font_size = 11
 config.window_background_opacity = 1
 config.enable_scroll_bar = true
 config.window_padding = {
-  left = 11,
-  right = 11,
-  top = 11,
-  bottom = 11,
+  left = 16,
+  right = 16,
+  top = 16,
+  bottom = 16,
 }
 config.window_frame = {
   font = wezterm.font { family = 'Lexend', weight = 'Bold' },

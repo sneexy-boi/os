@@ -3,7 +3,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Applets][33][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 configMigrated=true
 popupHeight=303
 popupWidth=374
@@ -27,6 +27,9 @@ source=wettercom|weather|McAllen, Texas, US|US0TX0852;McAllen
 [FileDialogSize]
 2 screens: Height=583
 2 screens: Width=824
+
+[PIMEventsPlugin]
+calendars=94,142,143,144,145,146,147,148,149,150
 
 [PlasmaViews][Panel 29]
 floating=1

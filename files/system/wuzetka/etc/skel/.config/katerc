@@ -154,8 +154,8 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Replace History=/etc,,class^, =,config/scripts,config/scripts/,kde-extras
-Search History=cMKQ3G14Pccae38YgP5M9a512tDm3E,matrix.,.png,startupwm,etc,/usr/etc,animation,--background,first-child,tor,sync,",class*,*,:,config/scripts/,sernik,mv -r,kde-addons
+Replace History=\s,",${LOCAL_PDS_FOLDER},${LOCAL_MAILSERVER_FOLDER},${LOCAL_VAULTWARDEN_FOLDER},${LOCAL_FRESHRSS_FOLDER},${LOCAL_CONDUWUIT_FOLDER},${LOCAL_ICESHRIMP_FOLDER},${LOCAL_SHARKEY_FOLDER},${OUTPUT_TAR},${WORKING_DIR},/home/ruben/backup,"category": "Pats"\\,,"category": "Neoduke"\\,,/etc,,class^, =,config/scripts,config/scripts/,kde-extras
+Search History=porn,furry porn,    ,',/home/ruben/pds,/home/ruben/mailserver,/home/ruben/vaultwarden,/home/ruben/freshrss,/home/ruben/conduwuit,/home/ruben/iceshrimp,/home/ruben/sharkey,ruben_backups.tar,/var/backups/ruben,"category": "pats"\\,,"category": "neoduke"\\,,cMKQ3G14Pccae38YgP5M9a512tDm3E,matrix.,.png,startupwm,etc,/usr/etc,animation,--background,first-child,tor,sync,",class*,*,:,config/scripts/,sernik,mv -r,kde-addons
 
 [Konsole]
 AutoSyncronizeMode=0
@@ -167,8 +167,8 @@ SetEditor=false
 
 [MainWindow]
 1366x768 screen: Window-Maximized=true
-2 screens: Height=910
-2 screens: Width=1011
+2 screens: Height=768
+2 screens: Width=681
 2 screens: Window-Maximized=true
 
 [PluginTextFilter]

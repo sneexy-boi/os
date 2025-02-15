@@ -52,3 +52,4 @@ x-scheme-handler/http=zen-browser.desktop
 x-scheme-handler/https=zen-browser.desktop
 x-scheme-handler/sgnl=org.signal.Signal.desktop
 x-scheme-handler/signalcaptcha=org.signal.Signal.desktop
+x-scheme-handler/discord-1159627283506679839=discord-1159627283506679839.desktop
