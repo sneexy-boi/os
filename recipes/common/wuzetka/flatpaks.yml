@@ -35,7 +35,6 @@ system:
     - org.inkscape.Inkscape
     - org.mattbas.Glaxnimate
     - net.blockbench.Blockbench
-    - io.github.Figma_Linux.figma_linux
     - org.kde.krita
     - org.kde.kdenlive
     - org.tuxpaint.Tuxpaint # i'm not kidding when i say this tuxpaint is actually fucking goated look through https://tuxpaint.org/gallery/
