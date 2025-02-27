@@ -9,6 +9,9 @@ repos:
   # ungoogled chromium
   - https://copr.fedorainfracloud.org/coprs/wojnilowicz/ungoogled-chromium/repo/fedora-%OS_VERSION%/wojnilowicz-ungoogled-chromium-fedora-%OS_VERSION%.repo
 
+  # vivaldi
+  - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
+
   # hblock
   - https://copr.fedorainfracloud.org/coprs/pesader/hblock/repo/fedora-%OS_VERSION%/pesader-hblock-fedora-%OS_VERSION%.repo
 
@@ -26,6 +29,7 @@ install:
   - floorp
   - zen-browser
   - ungoogled-chromium
+  - vivaldi-stable
   - torbrowser-launcher
   - speedtest-cli
 
@@ -171,6 +175,7 @@ install:
 optfix:
   - floorp
   - zen
+  - vivaldi
   - chromium.org
 remove:
   # default editors installed with fedora

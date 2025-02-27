@@ -56,7 +56,7 @@ sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-bazzite-multil
 #
 # WezTerm
 #
-curl -sL -o /tmp/wezterm.rpm "https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-fedora40.rpm"
+curl -sL -o /tmp/wezterm.rpm "https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-fedora41.rpm"
 rpm-ostree install /tmp/wezterm.rpm
 
 #
