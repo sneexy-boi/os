@@ -16,6 +16,8 @@ modules:
 
     - type: bling
       install:
+          - ublue-update
+          - dconf-update-service
           - rpmfusion
 
     - from-file: common/wuzetka/rpm-ostree.yml
@@ -57,11 +59,6 @@ modules:
           # Copy self compiled software and allat
           - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/usr /usr
           - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/etc /etc
-
-    - type: bling
-      install:
-          - dconf-update-service
-          - ublue-update
 
     - from-file: common/wuzetka/flatpaks.yml
     - from-file: common/fonts.yml
