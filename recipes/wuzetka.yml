@@ -29,8 +29,17 @@ modules:
       scripts:
           - ld.sh
           - qdbus.sh
+          - sddm-astronaut-theme.sh
+          - catppuccin-plasma-install.sh
+          - papirus.sh
+          - papirus-catppuccin.sh
           - posy-cursors.sh
-          # - rpmfusion.sh
+          - bazzite.sh
+          - vscodium.sh
+          - floorp.sh
+          - zen-browser.sh
+          - flac2opus.sh
+          - just.sh
           - system-wuzetka.sh
 
     - type: files
