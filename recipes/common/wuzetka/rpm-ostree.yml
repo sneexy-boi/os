@@ -18,6 +18,9 @@ repos:
   # rom properties
   - https://copr.fedorainfracloud.org/coprs/kylegospo/rom-properties/repo/fedora-%OS_VERSION%/kylegospo-rom-properties-fedora-%OS_VERSION%.repo
 
+  # darkly
+  - https://copr.fedorainfracloud.org/coprs/deltacopy/darkly/repo/fedora-%OS_VERSION%/deltacopy-darkly-fedora-%OS_VERSION%.repo
+
   # syncthingtray
   - https://download.opensuse.org/repositories/home:mkittler/Fedora_%OS_VERSION%/home:mkittler.repo
 
@@ -167,6 +170,7 @@ install:
   - fontconfig
   - hunspell-en
   - gnome-themes-extra
+  - darkly
   - util-linux
   - lzip
   - qt5-qtwayland
