@@ -38,6 +38,7 @@ modules:
           - bazzite.sh
           - vscodium.sh
           - zen-browser.sh
+          - lazyvim.sh
           - flac2opus.sh
           - just.sh
           - system-wuzetka.sh
