@@ -2,6 +2,8 @@
 #
 # .zshrc - Zsh file loaded on interactive shell sessions.
 #
+# Config based off of Antidote - https://github.com/getantidote/zdotdir
+#
 
 # Lazy-load (autoload) Zsh function files from a directory.
 ZFUNCDIR=${ZDOTDIR:-$HOME}/.zfunctions
