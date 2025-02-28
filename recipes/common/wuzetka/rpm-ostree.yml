@@ -1,7 +1,7 @@
 type: rpm-ostree
 repos:
-  # floorp browser
-  - https://copr.fedorainfracloud.org/coprs/sneexy/floorp/repo/fedora-%OS_VERSION%/sneexy-floorp-fedora-%OS_VERSION%.repo
+  # librewolf
+  - https://repo.librewolf.net/librewolf.repo
 
   # zen browser
   - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser-fedora-%OS_VERSION%.repo
@@ -28,10 +28,8 @@ repos:
   - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
 install:
   # web browsers, related web utilities (layered directly because its both less of a hassle and also currently more secure than flatpak)
-  - firefox
-  - floorp
+  - librewolf
   - zen-browser
-  - ungoogled-chromium
   - vivaldi-stable
   - torbrowser-launcher
   - speedtest-cli
@@ -54,6 +52,7 @@ install:
   - docker-compose
   - zed
   - pipx
+  - topgrade
   
   # beets
   - beets
@@ -182,6 +181,8 @@ optfix:
   - vivaldi
   - chromium.org
 remove:
+  - firefox-langpacks
+  - firefox
   # default editors installed with fedora
   - vim-data
   - vim-minimal
