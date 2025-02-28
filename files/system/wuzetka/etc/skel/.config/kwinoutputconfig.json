@@ -29,7 +29,7 @@
             {
                 "allowSdrSoftwareBrightness": false,
                 "autoRotation": "InTabletMode",
-                "brightness": 1,
+                "brightness": 0.5,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "sRGB",
                 "connectorName": "HDMI-A-2",
@@ -65,6 +65,31 @@
                     "height": 1080,
                     "refreshRate": 60000,
                     "width": 1920
+                },
+                "overscan": 0,
+                "rgbRange": "Automatic",
+                "scale": 1,
+                "sdrBrightness": 200,
+                "sdrGamutWideness": 0,
+                "transform": "Normal",
+                "vrrPolicy": "Automatic",
+                "wideColorGamut": false
+            },
+            {
+                "allowSdrSoftwareBrightness": true,
+                "autoRotation": "InTabletMode",
+                "brightness": 1,
+                "colorPowerTradeoff": "PreferEfficiency",
+                "colorProfileSource": "sRGB",
+                "connectorName": "DP-1",
+                "edidHash": "18dc3123f3b7bad1acbdeafe27b91f77",
+                "edidIdentifier": "ACI 8357 4755 5 2010 0",
+                "highDynamicRange": false,
+                "iccProfilePath": "",
+                "mode": {
+                    "height": 900,
+                    "refreshRate": 60000,
+                    "width": 1600
                 },
                 "overscan": 0,
                 "rgbRange": "Automatic",
@@ -197,6 +222,38 @@
                             "y": 0
                         },
                         "priority": 0
+                    }
+                ]
+            },
+            {
+                "lidClosed": false,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 0,
+                        "position": {
+                            "x": 0,
+                            "y": 132
+                        },
+                        "priority": 2
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 1,
+                        "position": {
+                            "x": 2966,
+                            "y": 0
+                        },
+                        "priority": 0
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 3,
+                        "position": {
+                            "x": 1366,
+                            "y": 0
+                        },
+                        "priority": 1
                     }
                 ]
             }

@@ -1,0 +1,4 @@
+[Style]
+MenuItemDrawStrongFocus=false
+MenuOpacity=80
+TabBarAltStyle=true

@@ -51,7 +51,7 @@ LatitudeAuto=26.25
 LongitudeAuto=-98.23
 
 [Plugins]
-blurEnabled=false
+blurEnabled=true
 contrastEnabled=true
 cubeEnabled=true
 dimscreenEnabled=true
@@ -92,6 +92,9 @@ DesktopMode=0
 
 [Tiling]
 padding=4
+
+[Tiling][4af5e6a5-25dd-5535-9744-895120471ab7]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][4ef57ebe-d1b2-548b-99f7-95926df4e579]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
