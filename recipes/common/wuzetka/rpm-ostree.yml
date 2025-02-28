@@ -24,6 +24,9 @@ repos:
   # syncthingtray
   - https://download.opensuse.org/repositories/home:mkittler/Fedora_%OS_VERSION%/home:mkittler.repo
 
+  # wezterm
+  - https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-%OS_VERSION%/wezfurlong-wezterm-nightly-%OS_VERSION%.repo
+
   # tailscale
   - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
 install:
@@ -112,6 +115,7 @@ install:
   - ncmpcpp
 
   # terminals and some modern unix utilities
+  - wezterm
   - ghostty
   - kitty
   - bat
