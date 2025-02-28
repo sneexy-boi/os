@@ -37,7 +37,6 @@ modules:
           - posy-cursors.sh
           - bazzite.sh
           - vscodium.sh
-          - floorp.sh
           - zen-browser.sh
           - flac2opus.sh
           - just.sh
