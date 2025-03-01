@@ -32,55 +32,55 @@ repos:
 install:
   # web browsers, related web utilities (layered directly because its both less of a hassle and also currently more secure than flatpak)
   - librewolf
-  - zen-browser
-  - vivaldi-stable
-  - torbrowser-launcher
   - speedtest-cli
+  - torbrowser-launcher
+  - vivaldi-stable
+  - zen-browser
 
   # office
   - libreoffice
-  - thunderbird
   - merkuro
+  - thunderbird
 
   # other software
   - blender
+  - docker-compose
   - mpv
   - nextcloud-client
   - nextcloud-client-dolphin
-  - syncthing
-  - syncthingtray-qt6
-  - syncthingplasmoid-qt6
-  - syncthingfileitemaction-qt6
-  - syncthingctl-qt6
-  - docker-compose
-  - zed
   - pipx
+  - syncthing
+  - syncthingctl-qt6
+  - syncthingfileitemaction-qt6
+  - syncthingplasmoid-qt6
+  - syncthingtray-qt6
   - topgrade
+  - zed
   
   # beets
   - beets
-  - beets-plugins
   - beets-doc
-  - python3-requests
-  - python3-pylast
-  - python3-acoustid
+  - beets-plugins
   - chromaprint-tools
+  - python3-acoustid
+  - python3-pylast
+  - python3-requests
 
   # flac2opus
   - flac
   - opus-tools
 
   # environment
+  - crontabs
+  - gamescope
+  - hblock
+  - helvum
+  - mangohud
   - pavucontrol-qt
   - playerctl
-  - helvum
-  - crontabs
   - tailscale
-  - gamescope
-  - mangohud
-  - hblock
-  - wl-clipboard
   - trash-cli
+  - wl-clipboard
 
   # python modules
   - python3-colorama
@@ -93,106 +93,104 @@ install:
   - yaru-sound-theme
 
   # virtualization software
-  - qemu
-  - qemu-user-binfmt
-  - virt-manager
-  - libvirt
   - edk2-ovmf
   - genisoimage
+  - libvirt
+  - qemu
+  - qemu-char-spice
+  - qemu-device-display-virtio-gpu
+  - qemu-device-display-virtio-vga
+  - qemu-device-usb-redirect
   - qemu-img
   - qemu-system-x86-core
-  - qemu-char-spice
-  - qemu-device-usb-redirect
-  - qemu-device-display-virtio-vga
-  - qemu-device-display-virtio-gpu
+  - qemu-user-binfmt
+  - virt-manager
 
   # waydroid and android
-  - waydroid
   - android-tools
+  - waydroid
 
   # mpd
   - mpdris2
   - ncmpcpp
 
   # terminals and some modern unix utilities
-  - wezterm
-  - ghostty
-  - kitty
   - bat
   - duf
+  - eza
   - fastfetch
   - fd-find
   - fzf
   - git-delta
-  - eza
+  - ImageMagick
   - neovim
   - ripgrep
   - sd
+  - wezterm
   - zoxide
   - zsh
-  - ImageMagick
 
   # console utilities
   - btop
   - ffmpeg
-  - yt-dlp
   - figlet
   - gdisk
   - pv
+  - yt-dlp
 
   # kde applications and utilities
   - ark
   - dolphin-plugins
-  - rom-properties-kf6
-  - k3b
-  - kate
-  - kalk
-  - ksystemlog
   - filelight
   - gwenview
   - isoimagewriter
-  - kclock
+  - k3b
+  - kalk
   - kamoso
+  - kate
+  - kclock
   - kfind
-  - kweather
   - kompare
+  - ksystemlog
+  - kweather
   - okular
+  - rom-properties-kf6
 
   # kde libraries
+  - ffmpegthumbs
   - kaccounts-integration
   - kaccounts-providers
   - kdepim
   - kdepim-addons
-  - ffmpegthumbs
-  - qt6-qtdeclarative
   - qt6-qt5compat
+  - qt6-qtdeclarative
   - qt6-qtsvg
   - translate-shell
 
   # libraries and tools, misc.
-  - fontconfig
-  - hunspell-en
-  - gnome-themes-extra
   - darkly
-  - util-linux
+  - fontconfig
+  - gnome-themes-extra
+  - hunspell-en
   - lzip
   - qt5-qtwayland
-  - qt6-qtwayland
   - qt6-qtlocation
+  - qt6-qtwayland
+  - util-linux
 optfix:
-  - floorp
-  - zen
-  - vivaldi
   - chromium.org
+  - floorp
+  - vivaldi
+  - zen
 remove:
   - firefox-langpacks
   - firefox
   # default editors installed with fedora
-  - vim-data
-  - vim-minimal
-  - vim-filesystem
-  - vim-common
-  - vim-enhanced
+  - default-editor
   - nano
   - nano-default-editor
-  - default-editor
+  - vim-common
+  - vim-data
+  - vim-enhanced
+  - vim-filesystem
+  - vim-minimal
