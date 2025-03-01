@@ -18,7 +18,6 @@ system:
     - org.nicotine_plus.Nicotine
     - org.qbittorrent.qBittorrent
     - org.signal.Signal
-    - org.squidowl.halloy
 
     # office
     - io.github.Qalculate.qalculate-qt
