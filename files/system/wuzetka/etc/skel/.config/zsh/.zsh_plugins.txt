@@ -12,7 +12,7 @@ aloxaf/fzf-tab
 belak/zsh-utils path:completion/functions kind:autoload post:compstyle_zshzoo_setup
 
 # Keybindings
-belak/zsh-utils path:editor
+daniellmiranda/zsh-utils path:editor # fork that doesn't force block cursor
 
 # History
 belak/zsh-utils path:history
@@ -20,13 +20,13 @@ belak/zsh-utils path:history
 # Utilities
 zshzoo/macos conditional:is-macos
 belak/zsh-utils path:utility
-romkatv/zsh-bench kind:path
+romkatv/zsh-bench kind:path kind:defer
 ohmyzsh/ohmyzsh path:plugins/extract
 
 # Other Fish-like features
-zdharma-continuum/fast-syntax-highlighting  # Syntax highlighting
-zsh-users/zsh-autosuggestions               # Auto-suggestions
+zdharma-continuum/fast-syntax-highlighting kind:defer
+zsh-users/zsh-autosuggestions kind:defer
 
 # Misc.
-paulirish/git-open
-dim-an/cod
+paulirish/git-open kind:defer
+dim-an/cod kind:defer
