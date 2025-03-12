@@ -54,7 +54,7 @@ modules:
           - RUN rm -f /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/1.png
           - RUN ln -sf /usr/share/backgrounds/catppuccin/black-hole-mocha.png /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/1.png
           # ensure unfuck_music script is executable
-          - RUN chmod +x /usr/bin/unfuck_music
+          - RUN chmod +x /usr/bin/unfuck-music
           # Copy self compiled software and allat
           - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/usr /usr
           - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/etc /etc
