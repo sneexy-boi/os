@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# script that restarts the user services of mpd and co.
+# also triggered when coming back from suspend via uesr systemd service (usually when it stops working)
+
+for arg in "$@"; do
+  if [[ "$arg" = -w ]] || [[ "$arg" = --wait ]]; then
+    # wait 5 seconds to ensure everythings back up properly before trying again
+    sleep 5
+  fi
+done
+
+systemctl --user restart mpd.service && \
+systemctl --user restart mpDris2.service && \
+systemctl --user restart rescrobbled.service
