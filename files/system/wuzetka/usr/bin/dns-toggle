@@ -6,7 +6,7 @@ if [[ ${UID} != 0 ]]; then
   exit 1
 fi
 
-if [ -d "/etc/systemd/resolved.conf.d/dns_servers.conf" ]; then
+if [ -f "/etc/systemd/resolved.conf.d/dns_servers.conf" ]; then
     mv /etc/systemd/resolved.conf.d/dns_servers.conf /etc/systemd/resolved.conf.d/dns_servers.conf.disabled
     systemctl restart systemd-resolved.service
     echo "
