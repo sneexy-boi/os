@@ -30,6 +30,7 @@ system:
     - com.obsproject.Studio.Plugin.GStreamerVaapi
     - com.obsproject.Studio.Plugin.OBSVkCapture
     - io.gitlab.adhami3310.Footage
+    - io.lmms.LMMS
     - net.blockbench.Blockbench
     - org.gimp.GIMP
     - org.inkscape.Inkscape
