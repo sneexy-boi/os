@@ -1,7 +1,7 @@
 type: rpm-ostree
 repos:
-  # librewolf
-  - https://repo.librewolf.net/librewolf.repo
+  # floorp browser
+  - https://copr.fedorainfracloud.org/coprs/sneexy/floorp/repo/fedora-%OS_VERSION%/sneexy-floorp-fedora-%OS_VERSION%.repo
 
   # zen browser
   - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser-fedora-%OS_VERSION%.repo
@@ -31,7 +31,8 @@ repos:
   - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
 install:
   # web browsers, related web utilities (layered directly because its both less of a hassle and also currently more secure than flatpak)
-  - librewolf
+  - firefox
+  - floorp
   - speedtest-cli
   - torbrowser-launcher
   - vivaldi-stable
