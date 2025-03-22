@@ -184,8 +184,6 @@ optfix:
   - vivaldi
   - zen
 remove:
-  - firefox-langpacks
-  - firefox
   # default editors installed with fedora
   - default-editor
   - nano
