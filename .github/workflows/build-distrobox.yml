@@ -1,4 +1,4 @@
-name: Build Arch-Wuzetka
+name: build arch-wuzetka
 on:
   schedule:
     - cron: '20 18 * * *'  # 8:20pm everyday

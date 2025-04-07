@@ -1,4 +1,4 @@
-name: containersbuild
+name: build helper containers
 on:
     pull_request:
     schedule:
