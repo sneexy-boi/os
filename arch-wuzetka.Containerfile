@@ -1,4 +1,4 @@
-FROM quay.io/toolbx/arch-toolbox AS arch-distrobox
+FROM quay.io/toolbx/arch-toolbox AS arch-wuzetka
 
 # Pacman Initialization
 # Create build user
@@ -122,7 +122,7 @@ RUN sed -i 's@#en_US.UTF-8@en_US.UTF-8@g' /etc/locale.gen && \
     sed -i '/root ALL=(ALL) NOPASSWD: ALL/d' /etc/sudoers && \
     rm -rf /tmp/*
 
-FROM arch-distrobox AS arch-distrobox-amdgpupro
+FROM arch-wuzetka AS arch-wuzetka-amdgpupro
 
 # Install amdgpu-pro, remove other drivers
 RUN useradd -m --shell=/bin/bash build && usermod -L build && \
