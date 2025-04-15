@@ -15,9 +15,15 @@ common features shared between these images:
 
 customized image based on Fedora Kinoite, which uses the KDE Plasma desktop. features configured desktop with extensions and also a customized sddm login screen that greets you with "erm. what the sigma?"
 
+the heaviest image, may not build correctly if properly installed (as in, using an ISO - rebasing works too, just remember to copy everything from `/etc/skel` into your home user directory to get my correct configurations) and some things such as the flatpak helper may also not work correctly because i use too many things apparently 🫠
+
+### arch-wuzetka
+
+*not* a custom arch linux image. well, it is, but it's meant for distrobox, not to actually be installed on the host or anything. it just includes most of the CLI applications and utilities and some more extras to be able to install within wuzetka to get it fully properly functional without having to deal with anything else.
+
 ## kutia
 
-customized coreos image, some extra software is added but i ended up personally not using this image at all. so probably like don't use this one.
+customized coreos image, some extra software is added but i ended up personally not using this image at all, so no support or anything of the like provided. don't use it.
 
 ## Installation
 
