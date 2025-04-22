@@ -12,6 +12,7 @@
 # plasma-applet-netspeed-widget ~ https://github.com/dfaust/plasma-applet-netspeed-widget
 # PlasMusic Toolbar ~ https://github.com/ccatterina/plasmusic-toolbar
 # Desktop Indicator for Plasma 6 ~ https://github.com/dhruv8sh/plasma6-desktop-indicator
+# Syncthing Tray ~ https://github.com/Martchus/syncthingtray
 
 
 # Tell build process to exit if there are any errors.
@@ -23,7 +24,7 @@ mkdir -p /tmp/kde-extras-built
 #
 # Dependencies
 #
-dnf install -y git gcc-c++ cmake git-clang-format clang-devel extra-cmake-modules gettext kwin-devel kf6-kconfigwidgets-devel libepoxy-devel kf6-kcmutils-devel qt6-qtbase-private-devel wayland-devel libplasma-devel plasma5support-devel kf6-kwidgetsaddons-devel zip unzip "cmake(KF5Config)" "cmake(KF5CoreAddons)" "cmake(KF5FrameworkIntegration)"  "cmake(KF5GuiAddons)" "cmake(KF5Kirigami2)" "cmake(KF5WindowSystem)" "cmake(KF5I18n)" "cmake(Qt5DBus)" "cmake(Qt5Quick)" "cmake(Qt5Widgets)" "cmake(Qt5X11Extras)" "cmake(KDecoration2)" "cmake(KF6ColorScheme)" "cmake(KF6Config)" "cmake(KF6CoreAddons)" "cmake(KF6FrameworkIntegration)" "cmake(KF6GuiAddons)" "cmake(KF6I18n)" "cmake(KF6KCMUtils)" "cmake(KF6KirigamiPlatform)" "cmake(KF6WindowSystem)" "cmake(Qt6Core)" "cmake(Qt6DBus)" "cmake(Qt6Quick)" "cmake(Qt6Svg)" "cmake(Qt6Widgets)" "cmake(Qt6Xml)"
+dnf install -y git gcc-c++ cmake ninja-build git-clang-format clang-devel extra-cmake-modules glibc-gconv-extra gettext kwin-devel kf6-kconfigwidgets-devel libepoxy-devel kf6-kcmutils-devel qt6-qtbase-private-devel wayland-devel libplasma-devel plasma5support-devel kf6-kwidgetsaddons-devel zip unzip "cmake(KF5Config)" "cmake(KF5CoreAddons)" "cmake(KF5FrameworkIntegration)"  "cmake(KF5GuiAddons)" "cmake(KF5Kirigami2)" "cmake(KF5WindowSystem)" "cmake(KF5I18n)" "cmake(Qt5DBus)" "cmake(Qt5Quick)" "cmake(Qt5Widgets)" "cmake(Qt5X11Extras)" "cmake(KDecoration2)" "cmake(KF6ColorScheme)" "cmake(KF6Config)" "cmake(KF6CoreAddons)" "cmake(KF6FrameworkIntegration)" "cmake(KF6GuiAddons)" "cmake(KF6I18n)" "cmake(KF6KCMUtils)" "cmake(KF6KirigamiPlatform)" "cmake(KF6WindowSystem)" "cmake(Qt6Core)" "cmake(Qt6DBus)" "cmake(Qt6Quick)" "cmake(Qt6Svg)" "cmake(Qt6Widgets)" "cmake(Qt6Xml)"
 
 # Directories
 mkdir -p /tmp/kde-extras-built/usr/share/kwin/effects
@@ -155,3 +156,19 @@ cd plasma6-desktopindicator-gnome
 mv contents /tmp/kde-extras-built/usr/share/plasma/plasmoids/org.kde.plasma.ginti
 mv LICENSE /tmp/kde-extras-built/usr/share/plasma/plasmoids/org.kde.plasma.ginti
 mv metadata.json /tmp/kde-extras-built/usr/share/plasma/plasmoids/org.kde.plasma.ginti
+
+#
+# Syncthing Tray
+#
+mkdir -p /tmp/kde-extras-built/syncthingtray-building/sources
+cd /tmp/kde-extras-built/syncthingtray-building/sources
+git clone https://github.com/Martchus/cpp-utilities.git c++utilities
+git clone https://github.com/Martchus/qtutilities.git
+git clone https://github.com/Martchus/qtforkawesome.git
+git clone https://github.com/ForkAwesome/Fork-Awesome.git forkawesome
+git clone https://github.com/Martchus/syncthingtray.git
+git clone https://github.com/Martchus/subdirs.git
+cd /tmp/kde-extras-built/syncthingtray-building
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" -DFORK_AWESOME_FONT_FILE="/tmp/kde-extras-built/syncthingtray-building/sources/forkawesome/fonts/forkawesome-webfont.woff2" -DFORK_AWESOME_ICON_DEFINITIONS="/tmp/kde-extras-built/syncthingtray-building/sources/forkawesome/src/icons/icons.yml" "/tmp/kde-extras-built/syncthingtray-building/sources/subdirs/syncthingtray"
+cd /tmp/kde-extras-built/syncthingtray-building
+DESTDIR="/tmp/kde-extras-built" ninja install

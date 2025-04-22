@@ -44,6 +44,7 @@ system:
     - com.bitwarden.desktop
     - com.github.qarmin.szyszka
     - com.github.tenderowl.frog
+    - com.rustdesk.RustDesk
     - com.usebottles.bottles
     - fr.handbrake.ghb
     - io.github.halfmexican.Mingle
