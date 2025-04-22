@@ -169,6 +169,6 @@ git clone https://github.com/ForkAwesome/Fork-Awesome.git forkawesome
 git clone https://github.com/Martchus/syncthingtray.git
 git clone https://github.com/Martchus/subdirs.git
 cd /tmp/kde-extras-built/syncthingtray-building
-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" -DFORK_AWESOME_FONT_FILE="/tmp/kde-extras-built/syncthingtray-building/sources/forkawesome/fonts/forkawesome-webfont.woff2" -DFORK_AWESOME_ICON_DEFINITIONS="/tmp/kde-extras-built/syncthingtray-building/sources/forkawesome/src/icons/icons.yml" "/tmp/kde-extras-built/syncthingtray-building/sources/subdirs/syncthingtray"
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" -DQT_PACKAGE_PREFIX:STRING='Qt6' -DFORK_AWESOME_FONT_FILE="/tmp/kde-extras-built/syncthingtray-building/sources/forkawesome/fonts/forkawesome-webfont.woff2" -DFORK_AWESOME_ICON_DEFINITIONS="/tmp/kde-extras-built/syncthingtray-building/sources/forkawesome/src/icons/icons.yml" "/tmp/kde-extras-built/syncthingtray-building/sources/subdirs/syncthingtray"
 cd /tmp/kde-extras-built/syncthingtray-building
 DESTDIR="/tmp/kde-extras-built" ninja install
