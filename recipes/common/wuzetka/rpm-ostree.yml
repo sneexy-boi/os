@@ -21,9 +21,6 @@ repos:
   # darkly
   - https://copr.fedorainfracloud.org/coprs/deltacopy/darkly/repo/fedora-%OS_VERSION%/deltacopy-darkly-fedora-%OS_VERSION%.repo
 
-  # syncthingtray
-  - https://download.opensuse.org/repositories/home:mkittler/Fedora_%OS_VERSION%/home:mkittler.repo
-
   # wezterm
   - https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-%OS_VERSION%/wezfurlong-wezterm-nightly-%OS_VERSION%.repo
 
@@ -51,10 +48,6 @@ install:
   - nextcloud-client-dolphin
   - pipx
   - syncthing
-  - syncthingctl-qt6
-  - syncthingfileitemaction-qt6
-  - syncthingplasmoid-qt6
-  - syncthingtray-qt6
   - topgrade
   - zed
   
@@ -126,7 +119,7 @@ install:
   - ImageMagick
   - neovim
   - ripgrep
-  - sd
+  # - sd # why is it not on fedora 42 yet
   - wezterm
   - zoxide
   - zsh
