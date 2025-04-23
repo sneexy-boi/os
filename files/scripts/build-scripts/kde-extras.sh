@@ -24,7 +24,7 @@ mkdir -p /tmp/kde-extras-built
 #
 # Dependencies
 #
-dnf install -y git gcc-c++ cmake ninja-build git-clang-format clang-devel extra-cmake-modules glibc-gconv-extra gettext boost-devel qt5-qttools-devel kwin-devel kf6-kconfigwidgets-devel libepoxy-devel kf6-kcmutils-devel qt6-qtbase-private-devel wayland-devel libplasma-devel plasma5support-devel kf6-kwidgetsaddons-devel zip unzip "cmake(Plasma)" "cmake(KF5Config)" "cmake(KF5CoreAddons)" "cmake(KF5FrameworkIntegration)"  "cmake(KF5GuiAddons)" "cmake(KF5Kirigami2)" "cmake(KF5WindowSystem)" "cmake(KF5I18n)" "cmake(Qt5DBus)" "cmake(Qt5Quick)" "cmake(Qt5Widgets)" "cmake(Qt5X11Extras)" "cmake(KDecoration2)" "cmake(KF6ColorScheme)" "cmake(KF6Config)" "cmake(KF6KIO)" "cmake(KF6CoreAddons)" "cmake(KF6FrameworkIntegration)" "cmake(KF6GuiAddons)" "cmake(KF6I18n)" "cmake(KF6KCMUtils)" "cmake(KF6KirigamiPlatform)" "cmake(KF6WindowSystem)" "cmake(Qt6Core)" "cmake(Qt6DBus)" "cmake(Qt6Quick)" "cmake(Qt6QuickControls2)" "cmake(Qt6Svg)" "cmake(Qt6Widgets)" "cmake(Qt6Xml)" "cmake(Qt6Concurrent)" "cmake(Qt6Gui)" "cmake(Qt6LinguistTools)" "cmake(Qt6Network)" "cmake(Qt6Qml)" "cmake(Qt6Test)" "cmake(Qt6WebEngineWidgets)"
+dnf install -y git gcc-c++ cmake gn ninja-build git-clang-format clang-devel extra-cmake-modules glibc-gconv-extra gettext boost-devel qt5-qttools-devel kwin-devel kf6-kconfigwidgets-devel libepoxy-devel kf6-kcmutils-devel qt6-qtbase-private-devel wayland-devel libplasma-devel plasma5support-devel kf6-kwidgetsaddons-devel zip unzip "cmake(Plasma)" "cmake(KF5Config)" "cmake(KF5CoreAddons)" "cmake(KF5FrameworkIntegration)"  "cmake(KF5GuiAddons)" "cmake(KF5Kirigami2)" "cmake(KF5WindowSystem)" "cmake(KF5I18n)" "cmake(Qt5DBus)" "cmake(Qt5Quick)" "cmake(Qt5Widgets)" "cmake(Qt5X11Extras)" "cmake(KDecoration2)" "cmake(KF6ColorScheme)" "cmake(KF6Config)" "cmake(KF6KIO)" "cmake(KF6CoreAddons)" "cmake(KF6FrameworkIntegration)" "cmake(KF6GuiAddons)" "cmake(KF6I18n)" "cmake(KF6KCMUtils)" "cmake(KF6KirigamiPlatform)" "cmake(KF6WindowSystem)" "cmake(Qt6Core)" "cmake(Qt6DBus)" "cmake(Qt6Quick)" "cmake(Qt6QuickControls2)" "cmake(Qt6Svg)" "cmake(Qt6Widgets)" "cmake(Qt6Xml)" "cmake(Qt6Concurrent)" "cmake(Qt6Gui)" "cmake(Qt6LinguistTools)" "cmake(Qt6Network)" "cmake(Qt6Qml)" "cmake(Qt6Test)" "cmake(Qt6WebEngineWidgets)"
 
 # Directories
 mkdir -p /tmp/kde-extras-built/usr/share/kwin/effects
@@ -168,6 +168,15 @@ git clone https://github.com/Martchus/qtforkawesome.git
 git clone https://github.com/ForkAwesome/Fork-Awesome.git forkawesome
 git clone https://github.com/Martchus/syncthingtray.git
 git clone https://github.com/Martchus/subdirs.git
+ls /tmp/syncthingtray-building/sources
 cd /tmp/syncthingtray-building
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" -DQT_PACKAGE_PREFIX:STRING='Qt6' -DKF_PACKAGE_PREFIX:STRING='KF6' -DFORK_AWESOME_FONT_FILE="/tmp/syncthingtray-building/sources/forkawesome/fonts/forkawesome-webfont.woff2" -DFORK_AWESOME_ICON_DEFINITIONS="/tmp/syncthingtray-building/sources/forkawesome/src/icons/icons.yml" "/tmp/syncthingtray-building/sources/subdirs/syncthingtray"
+ls /tmp/syncthingtray-building
 DESTDIR="/tmp/kde-extras-built" ninja install
+ls /tmp/syncthingtray-building
+
+#
+# Show all files, hopefully
+#
+ls /tmp/kde-extras-built
+ls /tmp/kde-extras-built/usr
