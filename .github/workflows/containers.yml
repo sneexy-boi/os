@@ -9,6 +9,10 @@ on:
             - "files/scripts/build-scripts/**"
             - "containerfiles/**"
     workflow_dispatch:
+concurrency:
+    # only run one build at a time
+    group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+    cancel-in-progress: true
 env:
     IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
 
