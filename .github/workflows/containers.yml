@@ -7,7 +7,7 @@ on:
         paths:
             - ".github/**"
             - "files/scripts/build-scripts/**"
-            - "containerfiles/**"
+            - "containerfiles/helpers/**"
     workflow_dispatch:
 concurrency:
     # only run one build at a time
@@ -28,8 +28,7 @@ jobs:
             fail-fast: false
             matrix:
                 containerfile:
-                    - containerfiles/wuzetka-helper/Containerfile
-                    #- containerfiles/kutia-helper/Containerfile
+                    - containerfiles/helpers/wuzetka-helper.Containerfile
 
         steps:
             # Checkout push-to-registry action GitHub repository
