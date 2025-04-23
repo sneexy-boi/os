@@ -170,7 +170,7 @@ git clone https://github.com/Martchus/syncthingtray.git
 git clone https://github.com/Martchus/subdirs.git
 ls /tmp/syncthingtray-building/sources
 cd /tmp/syncthingtray-building
-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" -DQT_PACKAGE_PREFIX:STRING='Qt6' -DKF_PACKAGE_PREFIX:STRING='KF6' -DFORK_AWESOME_FONT_FILE="/tmp/syncthingtray-building/sources/forkawesome/fonts/forkawesome-webfont.woff2" -DFORK_AWESOME_ICON_DEFINITIONS="/tmp/syncthingtray-building/sources/forkawesome/src/icons/icons.yml" "/tmp/syncthingtray-building/sources/subdirs/syncthingtray"
+cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" -DQT_PACKAGE_PREFIX:STRING='Qt6' -DKF_PACKAGE_PREFIX:STRING='KF6' -DFORK_AWESOME_FONT_FILE="/tmp/syncthingtray-building/sources/forkawesome/fonts/forkawesome-webfont.woff2" -DFORK_AWESOME_ICON_DEFINITIONS="/tmp/syncthingtray-building/sources/forkawesome/src/icons/icons.yml" "/tmp/syncthingtray-building/sources/subdirs/syncthingtray"
 ls /tmp/syncthingtray-building
 DESTDIR="/tmp/kde-extras-built" ninja install
 ls /tmp/syncthingtray-building
