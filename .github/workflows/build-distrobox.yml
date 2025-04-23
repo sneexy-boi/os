@@ -5,17 +5,15 @@ on:
   pull_request:
     branches:
       - main
-    paths-ignore:
-      - '**.md'
-      - '**.txt'
+    paths:
+      - 'containerfiles/arch-wuzetka/**'
   pull_request_review:
     type: [submitted]
   push:
     branches:
       - main
-    paths-ignore:
-      - '**.md'
-      - '**.txt'
+    paths:
+      - 'containerfiles/arch-wuzetka/**'
   merge_group:
   workflow_dispatch:
 concurrency:
