@@ -30,7 +30,7 @@ cargo install inori --root /tmp/cargo-built/usr
 cargo install rmpc --locked --root /tmp/cargo-built/usr
 
 # MPD Discord RPC - https://github.com/JakeStanger/mpd-discord-rpc
-cargo install mpd-discord-rpc --root /tmp/cargo-built/usr
+cargo install mpd-discord-rpc --locked --root /tmp/cargo-built/usr
 
 # Rescrobbled - https://github.com/InputUsername/rescrobbled
 cargo install rescrobbled --root /tmp/cargo-built/usr
