@@ -27,6 +27,7 @@ install:
     - thunderbird
 
     # other software
+    - anda
     - blender
     - docker-compose
     - mpd
