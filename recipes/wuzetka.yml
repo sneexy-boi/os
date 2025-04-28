@@ -17,14 +17,8 @@ modules:
     - type: bling
       install:
           - dconf-update-service
-          - rpmfusion
 
-    - from-file: common/wuzetka/rpm-ostree.yml
-
-    - type: containerfile
-      snippets:
-          # install packages from rpmfusion repos
-          - RUN rpm-ostree install mpd
+    - from-file: common/wuzetka/dnf.yml
 
     - type: script
       scripts:
@@ -35,7 +29,7 @@ modules:
           - papirus.sh
           - papirus-catppuccin.sh
           - posy-cursors.sh
-          - bazzite.sh
+          #- bazzite.sh
           - vscodium.sh
           - zen-browser.sh
           - lazyvim.sh

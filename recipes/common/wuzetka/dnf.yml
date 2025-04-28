@@ -1,0 +1,176 @@
+type: dnf
+repos:
+  nonfree: rpmfusion
+  copr:
+    - deltacopy/darkly
+    - pesader/hblock
+    - sneexy/floorp
+    - sneexy/zen-browser
+    - wezfurlong/wezterm-nightly
+    - wojnilowicz/ungoogled-chromium
+  files:
+    - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+    - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
+install:
+  packages:
+    # web browsers, related web utilities (layered directly because its both less of a hassle and also currently more secure than flatpak)
+    - firefox
+    - floorp
+    - speedtest-cli
+    - torbrowser-launcher
+    - vivaldi-stable
+    - zen-browser
+
+    # office
+    - libreoffice
+    - merkuro
+    - thunderbird
+
+    # other software
+    - blender
+    - docker-compose
+    - mpd
+    - mpv
+    - nextcloud-client
+    - nextcloud-client-dolphin
+    - pipx
+    - steam
+    - syncthing
+    - topgrade
+    - zed
+  
+    # beets
+    - beets
+    - beets-doc
+    - beets-plugins
+    - chromaprint-tools
+    - python3-acoustid
+    - python3-pylast
+    - python3-requests
+
+    # flac2opus
+    - flac
+    - opus-tools
+
+    # environment
+    - crontabs
+    - gamescope
+    - hblock
+    - helvum
+    - mangohud
+    - pavucontrol-qt
+    - playerctl
+    - tailscale
+    - trash-cli
+    - wl-clipboard
+
+    # python modules
+    - python3-colorama
+    - python3-dateutil
+
+    # themes
+    - bibata-cursor-theme
+    - oxygen-sounds
+    - pop-sound-theme
+    - yaru-sound-theme
+
+    # virtualization software
+    - edk2-ovmf
+    - genisoimage
+    - libvirt
+    - qemu
+    - qemu-char-spice
+    - qemu-device-display-virtio-gpu
+    - qemu-device-display-virtio-vga
+    - qemu-device-usb-redirect
+    - qemu-img
+    - qemu-system-x86-core
+    - qemu-user-binfmt
+    - virt-manager
+
+    # waydroid and android
+    - android-tools
+    - waydroid
+
+    # mpd
+    - mpdris2
+    - ncmpcpp
+
+    # terminals and some modern unix utilities
+    - bat
+    - duf
+    - eza
+    - fastfetch
+    - fd-find
+    - fzf
+    - git-delta
+    - ImageMagick
+    - neovim
+    - ripgrep
+    # - sd # why is it not on fedora 42 yet
+    - wezterm
+    - zoxide
+    - zsh
+
+    # console utilities
+    - btop
+    - ffmpeg
+    - figlet
+    - gdisk
+    - pv
+    - yt-dlp
+
+    # kde applications and utilities
+    - ark
+    - dolphin-plugins
+    - filelight
+    - gwenview
+    - isoimagewriter
+    - k3b
+    - kalk
+    - kamoso
+    - kate
+    - kclock
+    - kfind
+    - kompare
+    - ksystemlog
+    - kweather
+    - okular
+
+    # kde libraries
+    - ffmpegthumbs
+    - kaccounts-integration
+    - kaccounts-providers
+    - kdepim
+    - kdepim-addons
+    - qt6-qt5compat
+    - qt6-qtdeclarative
+    - qt6-qtsvg
+    - translate-shell
+
+    # libraries and tools, misc.
+    - darkly
+    - fontconfig
+    - gnome-themes-extra
+    - hunspell-en
+    - lzip
+    - qt5-qtwayland
+    - qt6-qtlocation
+    - qt6-qtwayland
+    - util-linux
+remove:
+  packages:
+    # default editors installed with fedora
+    - default-editor
+    - nano
+    - nano-default-editor
+    - vim-common
+    - vim-data
+    - vim-enhanced
+    - vim-filesystem
+    - vim-minimal
+optfix:
+  - chromium.org
+  - floorp
+  - vivaldi
+  - zen
