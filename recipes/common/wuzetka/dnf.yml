@@ -34,7 +34,6 @@ install:
     - nextcloud-client
     - nextcloud-client-dolphin
     - pipx
-    - steam
     - syncthing
     - topgrade
     - zed
