@@ -12,6 +12,7 @@ repos:
     - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
 install:
+  skip-unavailable: true
   packages:
     # web browsers, related web utilities (layered directly because its both less of a hassle and also currently more secure than flatpak)
     - firefox
@@ -158,6 +159,15 @@ install:
     - qt6-qtlocation
     - qt6-qtwayland
     - util-linux
+
+    - skip-unavailable: true
+      packages:
+        - steam
+
+    - from-repo: copr:copr.fedorainfracloud.org:kylegospo:bazzite
+      install:
+      packages:
+        - xwiimote-ng
 remove:
   packages:
     # default editors installed with fedora
