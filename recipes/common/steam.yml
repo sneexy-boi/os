@@ -1,0 +1,7 @@
+type: dnf
+repos:
+  nonfree: rpmfusion
+install:
+  skip-unavailable: true
+  packages:
+    - steam

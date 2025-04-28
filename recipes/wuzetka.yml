@@ -15,6 +15,7 @@ modules:
           - dconf-update-service
 
     - from-file: common/wuzetka/dnf.yml
+    - from-file: common/steam.yml
     - from-file: common/bazzite.yml
 
     - type: script
