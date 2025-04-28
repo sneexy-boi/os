@@ -22,10 +22,9 @@ modules:
 
     - type: dnf
       install:
+        install-weak-deps: false
         packages:
-          - install-weak-deps: false
-            packages:
-              - steam
+          - steam
 
     - type: script
       scripts:
