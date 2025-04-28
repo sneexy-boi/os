@@ -20,13 +20,6 @@ modules:
 
     - from-file: common/wuzetka/dnf.yml
 
-    - type: dnf
-      install:
-        packages:
-          - install-weak-deps: false
-            packages:
-              - steam
-
     - type: script
       scripts:
           - ld.sh

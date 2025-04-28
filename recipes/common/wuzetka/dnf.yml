@@ -173,3 +173,10 @@ optfix:
   - floorp
   - vivaldi
   - zen
+
+type: dnf
+install:
+  packages:
+    - install-weak-deps: false
+      packages:
+        - steam
