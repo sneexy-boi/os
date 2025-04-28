@@ -1,0 +1,9 @@
+type: dnf
+repos:
+  copr:
+    - kylegospo/bazzite
+    - kylegospo/bazzite-multilib
+install:
+  packages:
+    - xwiimote-ng
+    - xone-kmod

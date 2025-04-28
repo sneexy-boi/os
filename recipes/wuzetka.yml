@@ -10,21 +10,12 @@ image-version: 42 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-    - type: script
-      scripts:
-          - terra.sh
-
     - type: bling
       install:
           - dconf-update-service
 
     - from-file: common/wuzetka/dnf.yml
-
-    #- type: dnf
-    #  install:
-    #    install-weak-deps: false
-    #    packages:
-    #      - steam
+    - from-file: common/bazzite.yml
 
     - type: script
       scripts:
@@ -35,7 +26,6 @@ modules:
           - papirus.sh
           - papirus-catppuccin.sh
           - posy-cursors.sh
-          #- bazzite.sh
           - vscodium.sh
           - zen-browser.sh
           - lazyvim.sh
