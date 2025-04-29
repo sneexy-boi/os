@@ -36,6 +36,7 @@ install:
     - nextcloud-client
     - nextcloud-client-dolphin
     - pipx
+    - steam
     - syncthing
     - tailscale
     - topgrade
@@ -159,12 +160,6 @@ install:
     - qt6-qtlocation
     - qt6-qtwayland
     - util-linux
-
-    - repo:
-        nonfree: rpmfusion
-      skip-unavailable: true
-      packages:
-        - steam
 
     - repo: copr:copr.fedorainfracloud.org:kylegospo:bazzite
       packages:
