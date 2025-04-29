@@ -42,6 +42,7 @@ system:
 
     # (desktop) utilities
     - com.bitwarden.desktop
+    - com.github.Matoking.protontricks
     - com.github.qarmin.szyszka
     - com.github.tenderowl.frog
     - com.rustdesk.RustDesk
