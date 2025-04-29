@@ -1,0 +1,8 @@
+type: dnf
+repos:
+  cleanup: true
+  nonfree: rpmfusion
+install:
+  skip-unavailable: true
+  packages:
+    - mpd

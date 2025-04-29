@@ -1,6 +1,6 @@
 type: dnf
 repos:
-  nonfree: rpmfusion
+  nonfree: negativo17
   copr:
     - deltacopy/darkly
     - pesader/hblock
@@ -31,7 +31,6 @@ install:
     - anda
     - blender
     - docker-compose
-    - mpd
     - mpv
     - nextcloud-client
     - nextcloud-client-dolphin

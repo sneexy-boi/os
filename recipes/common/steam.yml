@@ -1,7 +1,11 @@
 type: dnf
 repos:
-  nonfree: rpmfusion
+  cleanup: true
+  files:
+    - https://negativo17.org/repos/fedora-steam.repo
 install:
   skip-unavailable: true
+  install-weak-deps: false
   packages:
     - steam
+    - kernel-modules-extra
