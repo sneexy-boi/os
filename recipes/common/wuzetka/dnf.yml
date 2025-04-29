@@ -160,10 +160,6 @@ install:
     - qt6-qtlocation
     - qt6-qtwayland
     - util-linux
-
-    - repo: copr:copr.fedorainfracloud.org:kylegospo:bazzite
-      packages:
-        - xwiimote-ng
 remove:
   packages:
     - default-editor
