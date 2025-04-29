@@ -160,12 +160,13 @@ install:
     - qt6-qtwayland
     - util-linux
 
-    - skip-unavailable: true
+    - repo:
+        nonfree: rpmfusion
+      skip-unavailable: true
       packages:
         - steam
 
-    - from-repo: copr:copr.fedorainfracloud.org:kylegospo:bazzite
-      install:
+    - repo: copr:copr.fedorainfracloud.org:kylegospo:bazzite
       packages:
         - xwiimote-ng
 remove:
