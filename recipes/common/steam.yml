@@ -1,9 +1,6 @@
 type: dnf
 repos:
-  cleanup: true
   files:
-    add:
-      - https://negativo17.org/repos/fedora-steam.repo
     remove:
       - terra
 install:
