@@ -20,6 +20,9 @@ cargo install starship --locked --root /tmp/cargo-built/usr
 # Sheldon - https://github.com/rossmacarthur/sheldon
 cargo install sheldon --root /tmp/cargo-built/usr
 
+# sd - https://github.com/chmln/sd.git
+cargo install sd --root /tmp/cargo-built/usr
+
 # Krabby - https://github.com/yannjor/krabby
 cargo install krabby --root /tmp/cargo-built/usr
 

@@ -111,7 +111,6 @@ install:
     - ImageMagick
     - neovim
     - ripgrep
-    # - sd # why is it not on fedora 42 yet
     - wezterm
     - zoxide
     - zsh
