@@ -9,6 +9,7 @@ repos:
     - wezfurlong/wezterm-nightly
     - wojnilowicz/ungoogled-chromium
   files:
+    - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
 install:
