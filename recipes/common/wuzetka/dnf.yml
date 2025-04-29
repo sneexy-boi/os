@@ -14,7 +14,7 @@ repos:
 install:
   skip-unavailable: true
   packages:
-    # web browsers, related web utilities (layered directly because its both less of a hassle and also currently more secure than flatpak)
+    # web
     - firefox
     - floorp
     - speedtest-cli
@@ -22,12 +22,12 @@ install:
     - vivaldi-stable
     - zen-browser
 
-    # office
+    # "Office"
     - libreoffice
     - merkuro
     - thunderbird
 
-    # other software
+    # misc
     - anda
     - blender
     - docker-compose
@@ -37,6 +37,7 @@ install:
     - nextcloud-client-dolphin
     - pipx
     - syncthing
+    - tailscale
     - topgrade
     - zed
   
@@ -61,7 +62,6 @@ install:
     - mangohud
     - pavucontrol-qt
     - playerctl
-    - tailscale
     - trash-cli
     - wl-clipboard
 
@@ -71,11 +71,12 @@ install:
 
     # themes
     - bibata-cursor-theme
+    - darkly
     - oxygen-sounds
     - pop-sound-theme
     - yaru-sound-theme
 
-    # virtualization software
+    # virtualization
     - edk2-ovmf
     - genisoimage
     - libvirt
@@ -89,7 +90,7 @@ install:
     - qemu-user-binfmt
     - virt-manager
 
-    # waydroid and android
+    # android
     - android-tools
     - waydroid
 
@@ -97,7 +98,7 @@ install:
     - mpdris2
     - ncmpcpp
 
-    # terminals and some modern unix utilities
+    # cli
     - bat
     - duf
     - eza
@@ -113,7 +114,7 @@ install:
     - zoxide
     - zsh
 
-    # console utilities
+    # cli utilities
     - btop
     - ffmpeg
     - figlet
@@ -121,7 +122,7 @@ install:
     - pv
     - yt-dlp
 
-    # kde applications and utilities
+    # kde
     - ark
     - dolphin-plugins
     - filelight
@@ -149,8 +150,7 @@ install:
     - qt6-qtsvg
     - translate-shell
 
-    # libraries and tools, misc.
-    - darkly
+    # other
     - fontconfig
     - gnome-themes-extra
     - hunspell-en
@@ -170,7 +170,6 @@ install:
         - xwiimote-ng
 remove:
   packages:
-    # default editors installed with fedora
     - default-editor
     - nano
     - nano-default-editor
