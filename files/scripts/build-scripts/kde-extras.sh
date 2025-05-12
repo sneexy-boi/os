@@ -158,6 +158,17 @@ mv LICENSE /tmp/kde-extras-built/usr/share/plasma/plasmoids/org.kde.plasma.ginti
 mv metadata.json /tmp/kde-extras-built/usr/share/plasma/plasmoids/org.kde.plasma.ginti
 
 #
+# Web Browser Extended
+#
+mkdir -p /tmp/kde-extras-built/usr/share/plasma/plasmoids/com.hourui.plasma.webbrowser
+cd /tmp
+git clone https://github.com/Hou-Rui/web-browser-extended.git
+cd web-browser-extended
+mv contents /tmp/kde-extras-built/usr/share/plasma/plasmoids/com.hourui.plasma.webbrowser
+mv LICENSE /tmp/kde-extras-built/usr/share/plasma/plasmoids/com.hourui.plasma.webbrowser
+mv metadata.json /tmp/kde-extras-built/usr/share/plasma/plasmoids/com.hourui.plasma.webbrowser
+
+#
 # Syncthing Tray
 #
 mkdir -p /tmp/syncthingtray-building/sources
