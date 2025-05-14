@@ -185,6 +185,7 @@ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" -DQT_PAC
 ls /tmp/syncthingtray-building
 DESTDIR="/tmp/kde-extras-built" ninja install
 ls /tmp/syncthingtray-building
+ls /tmp/kde-extras-built
 
 #
 # Show all files, hopefully
