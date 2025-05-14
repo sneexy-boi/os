@@ -3,6 +3,7 @@ repos:
   nonfree: negativo17
   copr:
     - deltacopy/darkly
+    - matinlotfali/KDE-Rounded-Corners
     - pesader/hblock
     - sneexy/floorp
     - sneexy/zen-browser
@@ -138,6 +139,7 @@ install:
     - kompare
     - ksystemlog
     - kweather
+    - kwin-effect-roundcorners
     - okular
 
     # kde libraries
