@@ -9,8 +9,6 @@ system:
     - chat.revolt.RevoltDesktop
     - dev.geopjr.Tuba
     - dev.vencord.Vesktop
-    - im.nheko.Nheko
-    - in.cinny.Cinny
     - io.github.kukuruzka165.materialgram
     - io.github.moonlight_mod.moonlight-installer
     - org.gajim.Gajim
