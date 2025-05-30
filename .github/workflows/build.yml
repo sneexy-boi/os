@@ -28,7 +28,7 @@ jobs:
         recipe:
           # !! Add your recipes here 
           - wuzetka.yml
-          - kutia.yml
+          #- kutia.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
