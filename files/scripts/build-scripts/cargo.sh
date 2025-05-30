@@ -39,7 +39,7 @@ cargo install mpd-discord-rpc --locked --root /tmp/cargo-built/usr
 cargo install rescrobbled --root /tmp/cargo-built/usr
 
 # tlrc - https://github.com/tldr-pages/tlrc
-cargo install tlrc --root /tmp/cargo-built/usr
+cargo install tlrc --locked --root /tmp/cargo-built/usr
 
 # emoji-gen - https://activitypub.software/Amelia/emoji-gen
 cd /tmp
