@@ -6,6 +6,7 @@ system:
   repo-title: "Flathub (system-wide)"
   install:
     # internet and chat
+    - chat.delta.desktop
     - chat.revolt.RevoltDesktop
     - dev.geopjr.Tuba
     - dev.vencord.Vesktop
