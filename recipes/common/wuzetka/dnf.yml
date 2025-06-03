@@ -13,12 +13,15 @@ repos:
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
+    - https://repository.mullvad.net/rpm/stable/mullvad.repo
 install:
   skip-unavailable: true
   packages:
     # web
     - firefox
     - floorp
+    - mullvad-browser
+    - mullvad-vpn
     - speedtest-cli
     - torbrowser-launcher
     - vivaldi-stable
