@@ -178,5 +178,6 @@ remove:
 optfix:
   - chromium.org
   - floorp
+  - Mullvad VPN
   - vivaldi
   - zen
