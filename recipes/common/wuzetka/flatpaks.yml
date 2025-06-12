@@ -24,6 +24,7 @@ system:
 
     # media production, editing software
     - com.dec05eba.gpu_screen_recorder
+    - com.github.taiko2k.avvie
     - com.obsproject.Studio
     - com.obsproject.Studio.Plugin.Gstreamer
     - com.obsproject.Studio.Plugin.GStreamerVaapi
