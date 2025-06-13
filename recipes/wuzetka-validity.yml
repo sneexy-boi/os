@@ -23,7 +23,7 @@ modules:
       install:
         packages:
           - open-fprintd
-          - fprintd-client
+          - fprintd-clients
           - fprintd-clients-pam
           - python3-validity
 
