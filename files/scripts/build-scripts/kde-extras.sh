@@ -33,14 +33,14 @@ mkdir -p /tmp/kde-extras-built/usr/share/plasma/plasmoid
 #
 # KDE Rounded Corners
 #
-#cd /tmp
-#git clone https://github.com/matinlotfali/KDE-Rounded-Corners.git
-#cd KDE-Rounded-Corners
-#mkdir build
-#cd build
-#cmake .. --install-prefix /usr
-#cmake --build . -j
-#make install DESTDIR=/tmp/kde-extras-built PREFIX='/usr'
+cd /tmp
+git clone https://github.com/matinlotfali/KDE-Rounded-Corners.git
+cd KDE-Rounded-Corners
+mkdir build
+cd build
+cmake .. --install-prefix /usr
+cmake --build . -j
+make install DESTDIR=/tmp/kde-extras-built PREFIX='/usr'
 
 #
 # Burn My Windows
