@@ -30,6 +30,8 @@ modules:
     - type: systemd
       system:
         enabled:
+          - open-fprintd.service
+          - python3-validity.service
           - open-fprintd-restart-after-resume.service
           - python3-validity-restart-after-resume.service
         disabled:
