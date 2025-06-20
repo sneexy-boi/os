@@ -140,9 +140,9 @@ install:
     - kclock
     - kfind
     - kompare
+    - krecorder
     - ksystemlog
     - kweather
-    #- kwin-effect-roundcorners
     - okular
 
     # kde libraries

@@ -1,4 +1,4 @@
-# bluebuild-custom &nbsp; [![bluebuild build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml) [![containers build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml)
+# bluebuild-custom &nbsp; [![bluebuild build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml) [![bluebuild validity build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build-validity.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build-validity.yml) [![containers build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml)
 
 custom [BlueBuild](https://blue-build.org) images for myself, based on [Universal Blue](https://universal-blue.org) which are based on immutable [Fedora](https://fedoraproject.org) images.
 
@@ -13,9 +13,13 @@ common features shared between these images:
 
 ## wuzetka
 
-customized image based on Fedora Kinoite, which uses the KDE Plasma desktop. features configured desktop with extensions and also a customized sddm login screen that greets you with "erm. what the sigma?"
+customized image based on Fedora Kinoite, which uses the KDE Plasma desktop. mainly featuring a fully customized configuration and desktop to my own tastes and features many extensions on top of Plasma.
 
-the heaviest image, may not build correctly if properly installed (as in, using an ISO - rebasing works too, just remember to copy everything from `/etc/skel` into your home user directory to get my correct configurations) and some things such as the flatpak helper may also not work correctly because i use too many things apparently 🫠
+may not install correctly/produce a bad install image if generating an ISO using this image, possibly due to being too large.
+
+### wuzetka-validity
+
+the same image, but replaces fprintd packages with python-validity for use with devices with "unsupported" fingerprint scanners e.g. the Thinkpad T480
 
 ### arch-wuzetka
 
