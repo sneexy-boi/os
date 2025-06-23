@@ -6,6 +6,11 @@ set -euo pipefail
 set -x
 
 #
+# Firefox Customizations
+#
+git clone https://github.com/black7375/Firefox-UI-Fix /etc/skel/.mozilla/firefox/default-profile/chrome -b proton-style
+
+#
 # Blender fixes
 #
 sed -i 's@Exec=blender %f@Exec=env INTEL_DEBUG=reemit blender %f@g' /usr/share/applications/blender.desktop
