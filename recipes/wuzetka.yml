@@ -30,6 +30,7 @@ modules:
           - vscodium.sh
           - zen-browser.sh
           - lazyvim.sh
+          - moonlight-laucher.sh
           - flac2opus.sh
           - just.sh
           - system-wuzetka.sh
