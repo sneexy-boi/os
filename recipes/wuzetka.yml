@@ -16,10 +16,6 @@ modules:
       install:
           - dconf-update-service
 
-    #- type: script
-    #  scripts:
-    #      - set-repos.sh
-
     - from-file: common/wuzetka/dnf.yml
     - from-file: common/mpd.yml
 
@@ -38,7 +34,6 @@ modules:
           - moonlight-launcher.sh
           - flac2opus.sh
           - just.sh
-          - yt-dlp.sh
           - system-wuzetka.sh
 
     - type: files
