@@ -1,3 +1,5 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/sernik-tech/<name>
 name: wuzetka
 # description will be included in the image's metadata
@@ -15,7 +17,6 @@ modules:
           - dconf-update-service
 
     - from-file: common/wuzetka/dnf.yml
-    #- from-file: common/steam.yml
     - from-file: common/mpd.yml
 
     - type: script

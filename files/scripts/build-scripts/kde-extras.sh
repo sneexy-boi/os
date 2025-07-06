@@ -3,7 +3,6 @@
 #
 # This script mass builds multiple plasma, kwin and other types of extensions for the wuzetka image.
 #
-# KDE Rounded Corners ~ https://github.com/matinlotfali/KDE-Rounded-Corners
 # Plasma Panel Colorizer ~ https://github.com/luisbocanegra/plasma-panel-colorizer
 # Burn My Windows dependencies ~ https://github.com/Schneegans/Burn-My-Windows
 # Overview Widget for Plasma ~ https://github.com/HimDek/Overview-Widget-for-Plasma
@@ -29,18 +28,6 @@ dnf install -y git gcc-c++ cmake gn perl-YAML-LibYAML ninja-build git-clang-form
 # Directories
 mkdir -p /tmp/kde-extras-built/usr/share/kwin/effects
 mkdir -p /tmp/kde-extras-built/usr/share/plasma/plasmoid
-
-#
-# KDE Rounded Corners
-#
-#cd /tmp
-#git clone https://github.com/matinlotfali/KDE-Rounded-Corners.git
-#cd KDE-Rounded-Corners
-#mkdir build
-#cd build
-#cmake .. --install-prefix /usr
-#cmake --build . -j
-#make install DESTDIR=/tmp/kde-extras-built PREFIX='/usr'
 
 #
 # Burn My Windows
