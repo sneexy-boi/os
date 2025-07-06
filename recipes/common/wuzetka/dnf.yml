@@ -143,7 +143,7 @@ install:
     - krecorder
     - ksystemlog
     - kweather
-    #- kwin-effect-roundcorners
+    - kwin-effect-roundcorners
     - okular
 
     # kde libraries
