@@ -39,8 +39,8 @@ FROM fedora:${IMAGE_MAJOR_VERSION}
 RUN mkdir -p /artifacts/usr
 RUN mkdir -p /artifacts/etc
 
-COPY --from=go /tmp/go-built/usr /artifacts/usr
-COPY --from=cargo /tmp/cargo-built/usr /artifacts/usr
-COPY --from=catppuccin /tmp/catppuccin-gtk/usr /artifacts/usr
-COPY --from=catppuccin /tmp/catppuccin-gtk/etc /artifacts/etc
-COPY --from=kde-extras /tmp/kde-extras-built/usr /artifacts/usr
+COPY --from=go /artifacts/go-built/usr /artifacts/usr
+COPY --from=cargo /artifacts/cargo-built/usr /artifacts/usr
+COPY --from=catppuccin /artifacts/catppuccin-gtk/usr /artifacts/usr
+COPY --from=catppuccin /artifacts/catppuccin-gtk/etc /artifacts/etc
+COPY --from=kde-extras /artifacts/kde-extras-built/usr /artifacts/usr

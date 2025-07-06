@@ -4,7 +4,7 @@
 set -euo pipefail
 
 # Create theme directory
-mkdir -p /tmp/catppuccin-papirus/usr/share/icons
+mkdir -p /artifacts/catppuccin-papirus/usr/share/icons
 
 # Dependencies
 dnf install -y git python3 python3-pip python3-gobject gtk3
@@ -19,5 +19,5 @@ source venv/bin/activate
 pip install -r requirements.txt
 # Create theme and install
 # As user:
-python3 install.py latte -a green -s compact -d /tmp/catppuccin-papirus/usr/share/icons
-python3 install.py mocha -a green -s compact -d /tmp/catppuccin-papirus/usr/share/icons
+python3 install.py latte -a green -s compact -d /artifacts/catppuccin-papirus/usr/share/icons
+python3 install.py mocha -a green -s compact -d /artifacts/catppuccin-papirus/usr/share/icons
