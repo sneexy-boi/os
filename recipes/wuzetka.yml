@@ -34,6 +34,7 @@ modules:
           - moonlight-launcher.sh
           - flac2opus.sh
           - just.sh
+          - yt-dlp.sh
           - system-wuzetka.sh
 
     - type: files

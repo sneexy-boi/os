@@ -125,7 +125,7 @@ install:
     - figlet
     - gdisk
     - pv
-    - yt-dlp
+    #- yt-dlp
 
     # kde
     - ark
