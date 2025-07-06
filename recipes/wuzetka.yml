@@ -16,6 +16,10 @@ modules:
       install:
           - dconf-update-service
 
+    - type: script
+      scripts:
+          - set-repos.sh
+
     - from-file: common/wuzetka/dnf.yml
     - from-file: common/mpd.yml
 
