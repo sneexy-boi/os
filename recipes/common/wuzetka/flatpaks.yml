@@ -1,93 +1,97 @@
 type: default-flatpaks
-notify: true
-system:
-  repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-  repo-name: flathub
-  repo-title: "Flathub (system-wide)"
-  install:
-    # internet and chat
-    - chat.delta.desktop
-    - chat.revolt.RevoltDesktop
-    - dev.geopjr.Tuba
-    - dev.vencord.Vesktop
-    - io.github.kukuruzka165.materialgram
-    - io.github.moonlight_mod.moonlight-installer
-    - org.gajim.Gajim
-    - org.kde.tokodon
-    - org.nicotine_plus.Nicotine
-    - org.qbittorrent.qBittorrent
-    - org.signal.Signal
+configurations:
+  - notify: false
+    scope: system
+    repo:
+      url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      name: flathub
+      title: "Flathub (system-wide)"
+    install:
+      # internet and chat
+      - chat.delta.desktop
+      - chat.revolt.RevoltDesktop
+      - dev.geopjr.Tuba
+      - dev.vencord.Vesktop
+      - io.github.kukuruzka165.materialgram
+      - io.github.moonlight_mod.moonlight-installer
+      - org.gajim.Gajim
+      - org.kde.tokodon
+      - org.nicotine_plus.Nicotine
+      - org.qbittorrent.qBittorrent
+      - org.signal.Signal
 
-    # office
-    - io.github.Qalculate.qalculate-qt
-    - md.obsidian.Obsidian
+      # office
+      - io.github.Qalculate.qalculate-qt
+      - md.obsidian.Obsidian
 
-    # media production, editing software
-    - com.dec05eba.gpu_screen_recorder
-    - com.github.taiko2k.avvie
-    - com.obsproject.Studio
-    - com.obsproject.Studio.Plugin.Gstreamer
-    - com.obsproject.Studio.Plugin.GStreamerVaapi
-    - com.obsproject.Studio.Plugin.OBSVkCapture
-    - io.gitlab.adhami3310.Footage
-    - io.lmms.LMMS
-    - net.blockbench.Blockbench
-    - org.gimp.GIMP
-    - org.inkscape.Inkscape
-    - org.kde.kdenlive
-    - org.kde.krita
-    - org.mattbas.Glaxnimate
-    - org.tenacityaudio.Tenacity
-    - org.tuxpaint.Tuxpaint # i'm not kidding when i say this tuxpaint is actually fucking goated look through https://tuxpaint.org/gallery/
+      # media production, editing software
+      - com.dec05eba.gpu_screen_recorder
+      - com.github.taiko2k.avvie
+      - com.obsproject.Studio
+      - com.obsproject.Studio.Plugin.Gstreamer
+      - com.obsproject.Studio.Plugin.GStreamerVaapi
+      - com.obsproject.Studio.Plugin.OBSVkCapture
+      - io.gitlab.adhami3310.Footage
+      - io.lmms.LMMS
+      - net.blockbench.Blockbench
+      - org.gimp.GIMP
+      - org.inkscape.Inkscape
+      - org.kde.kdenlive
+      - org.kde.krita
+      - org.mattbas.Glaxnimate
+      - org.tenacityaudio.Tenacity
+      - org.tuxpaint.Tuxpaint # i'm not kidding when i say this tuxpaint is actually fucking goated look through https://tuxpaint.org/gallery/
 
-    # (desktop) utilities
-    - com.bitwarden.desktop
-    - com.github.Matoking.protontricks
-    - com.github.qarmin.szyszka
-    - com.github.tenderowl.frog
-    - com.jeffser.Alpaca
-    - com.jeffser.Alpaca.Plugins.Ollama
-    - com.rustdesk.RustDesk
-    - com.usebottles.bottles
-    - fr.handbrake.ghb
-    - io.github.halfmexican.Mingle
-    - io.github.lainsce.Emulsion
-    - io.github.nate_xyz.Paleta
-    - io.github.seadve.Mousai
-    - io.gitlab.azymohliad.WatchMate
-    - it.mijorus.gearlever
-    - net.davidotek.pupgui2
-    - org.kde.okteta
-    - page.codeberg.JakobDev.jdAnimatedImageEditor
-    - page.codeberg.JakobDev.jdPixelUpscaler
+      # (desktop) utilities
+      - com.bitwarden.desktop
+      - com.github.Matoking.protontricks
+      - com.github.qarmin.szyszka
+      - com.github.tenderowl.frog
+      - com.jeffser.Alpaca
+      - com.jeffser.Alpaca.Plugins.Ollama
+      - com.rustdesk.RustDesk
+      - com.usebottles.bottles
+      - fr.handbrake.ghb
+      - io.github.halfmexican.Mingle
+      - io.github.lainsce.Emulsion
+      - io.github.nate_xyz.Paleta
+      - io.github.seadve.Mousai
+      - io.gitlab.azymohliad.WatchMate
+      - it.mijorus.gearlever
+      - net.davidotek.pupgui2
+      - org.kde.okteta
+      - page.codeberg.JakobDev.jdAnimatedImageEditor
+      - page.codeberg.JakobDev.jdPixelUpscaler
 
-    # gaming
-    - ca.parallel_launcher.ParallelLauncher
-    - com.github.k4zmu2a.spacecadetpinball
-    - com.retrodev.blastem
-    - info.cemu.Cemu
-    - io.github.dosbox-staging
-    - io.github.ec_.Quake3e.OpenArena
-    - io.github.lime3ds.Lime3DS
-    - io.github.stella_emu.Stella
-    - io.mgba.mGBA
-    - net.kuribo64.melonDS
-    - net.minetest.Minetest
-    - net.pcsx2.PCSX2
-    - org.DolphinEmu.dolphin-emu
-    - org.duckstation.DuckStation
-    - org.ppsspp.PPSSPP
-    - org.prismlauncher.PrismLauncher
-    - org.xonotic.Xonotic
-    - rs.ruffle.Ruffle
+      # gaming
+      - ca.parallel_launcher.ParallelLauncher
+      - com.github.k4zmu2a.spacecadetpinball
+      - com.retrodev.blastem
+      - info.cemu.Cemu
+      - io.github.dosbox-staging
+      - io.github.ec_.Quake3e.OpenArena
+      - io.github.lime3ds.Lime3DS
+      - io.github.stella_emu.Stella
+      - io.mgba.mGBA
+      - net.kuribo64.melonDS
+      - net.minetest.Minetest
+      - net.pcsx2.PCSX2
+      - org.DolphinEmu.dolphin-emu
+      - org.duckstation.DuckStation
+      - org.ppsspp.PPSSPP
+      - org.prismlauncher.PrismLauncher
+      - org.xonotic.Xonotic
+      - rs.ruffle.Ruffle
 
-    # system applications
-    - com.github.tchx84.Flatseal
-    - io.github.thetumultuousunicornofdarkness.cpu-x
-    - org.gustavoperedo.FontDownloader
-user:
-  repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-  repo-name: flathub-user
-  repo-title: "Flathub (User)"
-  install:
-    - com.discordapp.Discord # we use the moonlight mod, which requires discord installed as a user package
+      # system applications
+      - com.github.tchx84.Flatseal
+      - io.github.thetumultuousunicornofdarkness.cpu-x
+      - org.gustavoperedo.FontDownloader
+  - notify: false
+    scope: user
+    repo:
+      url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      name: flathub-user
+      title: "Flathub (User)"
+    install:
+      - com.discordapp.Discord # we use the moonlight mod, which requires discord installed as a user package
