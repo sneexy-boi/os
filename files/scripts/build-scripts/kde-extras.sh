@@ -158,24 +158,14 @@ mv metadata.json /artifacts/kde-extras-built/usr/share/plasma/plasmoids/com.hour
 #
 # Syncthing Tray
 #
-mkdir -p /tmp/syncthingtray-building/sources
-cd /tmp/syncthingtray-building/sources
-git clone https://github.com/Martchus/cpp-utilities.git c++utilities
-git clone https://github.com/Martchus/qtutilities.git
-git clone https://github.com/Martchus/qtforkawesome.git
-git clone https://github.com/ForkAwesome/Fork-Awesome.git forkawesome
-git clone https://github.com/Martchus/syncthingtray.git
-git clone https://github.com/Martchus/subdirs.git
-ls /tmp/syncthingtray-building/sources
-cd /tmp/syncthingtray-building
-cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" -DQT_PACKAGE_PREFIX:STRING='Qt6' -DKF_PACKAGE_PREFIX:STRING='KF6' -DFORK_AWESOME_FONT_FILE="/tmp/syncthingtray-building/sources/forkawesome/fonts/forkawesome-webfont.woff2" -DFORK_AWESOME_ICON_DEFINITIONS="/tmp/syncthingtray-building/sources/forkawesome/src/icons/icons.yml" "/tmp/syncthingtray-building/sources/subdirs/syncthingtray"
-ls /tmp/syncthingtray-building
-DESTDIR="/artifacts/kde-extras-built" ninja install
-ls /tmp/syncthingtray-building
-ls /artifacts/kde-extras-built
-
-#
-# Show all files, hopefully
-#
-ls /artifacts/kde-extras-built
-ls /artifacts/kde-extras-built/usr
+#mkdir -p /tmp/syncthingtray-building/sources
+#cd /tmp/syncthingtray-building/sources
+#git clone https://github.com/Martchus/cpp-utilities.git c++utilities
+#git clone https://github.com/Martchus/qtutilities.git
+#git clone https://github.com/Martchus/qtforkawesome.git
+#git clone https://github.com/ForkAwesome/Fork-Awesome.git forkawesome
+#git clone https://github.com/Martchus/syncthingtray.git
+#git clone https://github.com/Martchus/subdirs.git
+#cd /tmp/syncthingtray-building
+#cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" -DQT_PACKAGE_PREFIX:STRING='Qt6' -DKF_PACKAGE_PREFIX:STRING='KF6' -DFORK_AWESOME_FONT_FILE="/tmp/syncthingtray-building/sources/forkawesome/fonts/forkawesome-webfont.woff2" -DFORK_AWESOME_ICON_DEFINITIONS="/tmp/syncthingtray-building/sources/forkawesome/src/icons/icons.yml" "/tmp/syncthingtray-building/sources/subdirs/syncthingtray"
+#DESTDIR="/artifacts/kde-extras-built" ninja install

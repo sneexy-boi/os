@@ -10,6 +10,7 @@ repos:
     - wezfurlong/wezterm-nightly
     - wojnilowicz/ungoogled-chromium
   files:
+    - https://download.opensuse.org/repositories/home:mkittler/Fedora_42/home:mkittler.repo # hardcoded version because they take a while to bump to latest fedora when it releases
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
@@ -145,6 +146,10 @@ install:
     - kweather
     - kwin-effect-roundcorners
     - okular
+    - syncthingctl-qt6
+    - syncthingfileitemaction-qt6
+    - syncthingplasmoid-qt6
+    - syncthingtray-qt6
 
     # kde libraries
     - ffmpegthumbs
