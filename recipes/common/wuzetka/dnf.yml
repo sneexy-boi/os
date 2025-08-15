@@ -114,6 +114,7 @@ install:
     - fzf
     - git-delta
     - ImageMagick
+    - knock
     - neovim
     - ripgrep
     - wezterm
