@@ -67,7 +67,7 @@ modules:
         enabled:
           - systemd-tmpfiles-setup.service
           - mpd.service
-          - mpDris2.service
+          - mpdris2-rs.service
           - mpd-discord-rpc.service
           - rescrobbled.service
 

@@ -11,11 +11,6 @@ set -x
 git clone https://github.com/black7375/Firefox-UI-Fix /etc/skel/.mozilla/firefox/default-profile/chrome -b proton-style
 
 #
-# Blender fixes
-#
-sed -i 's@Exec=blender %f@Exec=env INTEL_DEBUG=reemit blender %f@g' /usr/share/applications/blender.desktop
-
-#
 # Catppuccinify SDDM theme
 #
 sed -i 's@TextColor="#F8F8F2"@TextColor="#cdd6f4"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/astronaut.conf
@@ -34,6 +29,12 @@ curl -sL -o /usr/lib/systemd/user/mpd-discord-rpc.service https://raw.githubuser
 #
 curl -sL -o /usr/lib/systemd/user/rescrobbled.service https://raw.githubusercontent.com/InputUsername/rescrobbled/master/rescrobbled.service
 sed -i 's@ExecStart=%h/.cargo/bin/rescrobbled@ExecStart=/usr/bin/rescrobbled@g' /usr/lib/systemd/user/rescrobbled.service
+
+#
+# mpdris2-rs systemd service
+#
+curl -sL -o /usr/lib/systemd/user/mpdris2-rs.service https://raw.githubusercontent.com/szclsya/mpdris2-rs/refs/heads/trunk/misc/mpdris2-rs.service
+sed -i 's@ExecStart=/usr/local/bin/mpdris2-rs@ExecStart=/usr/bin/mpdris2-rs@g' /usr/lib/systemd/user/mpdris2-rs.service
 
 #
 # tlrc files
