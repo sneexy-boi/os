@@ -57,9 +57,12 @@ mkdir -p /artifacts/kde-extras-built/usr/share/plasma/plasmoids/luisbocanegra.pa
 cd /tmp
 git clone --single-branch --depth=1 https://github.com/luisbocanegra/plasma-panel-colorizer.git
 cd plasma-panel-colorizer
-chmod +x package-plasmoid.sh
-./package-plasmoid.sh
-unzip plasmoid-panel-colorizer-v*.plasmoid -d /artifacts/kde-extras-built/usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer
+#chmod +x package-plasmoid.sh
+#./package-plasmoid.sh
+#unzip plasmoid-panel-colorizer-v*.plasmoid -d /artifacts/kde-extras-built/usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer
+cmake -B build -S . -DINSTALL_PLASMOID=ON -DBUILD_PLUGIN=ON -DCMAKE_INSTALL_PREFIX="/artifacts/kde-extras-built/usr"
+cmake --build build
+DESTDIR="/artifacts/kde-extras-built/usr" cmake --install build
 
 #
 # Compact Pager
