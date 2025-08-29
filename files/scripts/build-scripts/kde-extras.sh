@@ -57,9 +57,10 @@ mkdir -p /artifacts/kde-extras-built/usr/share/plasma/plasmoids/luisbocanegra.pa
 cd /tmp
 #git clone --single-branch --depth=1 https://github.com/luisbocanegra/plasma-panel-colorizer.git
 latest_version=$(curl -s https://api.github.com/repos/luisbocanegra/plasma-panel-colorizer/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
+version=${latest_version#v}
 curl -Lo "/tmp/plasma-panel-colorizer.tar.gz" "https://github.com/luisbocanegra/plasma-panel-colorizer/archive/refs/tags/"$latest_version".tar.gz"
 tar -xf /tmp/plasma-panel-colorizer.tar.gz --one-top-level=/tmp/plasma-panel-colorizer
-cd plasma-panel-colorizer
+cd plasma-panel-colorizer/plasma-panel-colorizer-$version
 #chmod +x package-plasmoid.sh
 #./package-plasmoid.sh
 #unzip plasmoid-panel-colorizer-v*.plasmoid -d /artifacts/kde-extras-built/usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer
