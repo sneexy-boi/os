@@ -60,9 +60,11 @@ cd plasma-panel-colorizer
 #chmod +x package-plasmoid.sh
 #./package-plasmoid.sh
 #unzip plasmoid-panel-colorizer-v*.plasmoid -d /artifacts/kde-extras-built/usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer
-cmake -B build -S . -DINSTALL_PLASMOID=ON -DBUILD_PLUGIN=ON -DCMAKE_INSTALL_PREFIX="/artifacts/kde-extras-built/usr"
+cmake -B build -S . -DINSTALL_PLASMOID=ON -DBUILD_PLUGIN=ON
 cmake --build build
 DESTDIR="/artifacts/kde-extras-built/usr" cmake --install build
+chmod 700 "/artifacts/kde-extras-built/usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/list_presets.sh"
+chmod 700 "/artifacts/kde-extras-built/usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/gdbus_get_signal.sh"
 
 #
 # Compact Pager
