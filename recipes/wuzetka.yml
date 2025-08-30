@@ -34,7 +34,6 @@ modules:
           - moonlight-launcher.sh
           - flac2opus.sh
           - just.sh
-          - system-wuzetka.sh
 
     - type: files
       files:
@@ -52,9 +51,10 @@ modules:
           # Copy self compiled software and allat
           - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/usr /usr
           - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/etc /etc
-          # ensure executable bits are set from copied files
-          - RUN chmod 700 /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/list_presets.sh
-          - RUN chmod 700 /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/gdbus_get_signal.sh
+
+    - type: script
+      scripts:
+          - system-wuzetka.sh
 
     - from-file: common/wuzetka/flatpaks.yml
     - from-file: common/fonts.yml

@@ -20,6 +20,15 @@ sed -i 's@PlaceholderColor="#bbbbbb"@PlaceholderColor="#6c7086"@g' /usr/share/sd
 sed -i 's@SystemButtonsIconColor="#ffffff"@SystemButtonsIconColor="#cdd6f4"@g' /usr/share/sddm/themes/sddm-astronaut-theme/Themes/astronaut.conf
 
 #
+# Plasma Panel Colorizer fixes
+#
+mkdir -p /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools
+curl -sL -o /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/list_presets.sh https://raw.githubusercontent.com/luisbocanegra/plasma-panel-colorizer/refs/heads/main/package/contents/ui/tools/list_presets.sh
+curl -sL -o /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/gdbus_get_signal.sh https://raw.githubusercontent.com/luisbocanegra/plasma-panel-colorizer/refs/heads/main/package/contents/ui/tools/gdbus_get_signal.sh
+chmod +x /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/list_presets.sh
+chmod +x /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/gdbus_get_signal.sh
+
+#
 # MPD Discord RPC systemd service
 #
 curl -sL -o /usr/lib/systemd/user/mpd-discord-rpc.service https://raw.githubusercontent.com/JakeStanger/mpd-discord-rpc/master/mpd-discord-rpc.service
