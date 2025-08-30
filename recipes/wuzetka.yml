@@ -52,6 +52,9 @@ modules:
           # Copy self compiled software and allat
           - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/usr /usr
           - COPY --from=ghcr.io/sneexy-boi/wuzetka-helper /artifacts/etc /etc
+          # ensure executable bits are set from copied files
+          - RUN chmod +x /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/list_presets.sh
+          - RUN chmod +x /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/gdbus_get_signal.sh
 
     - from-file: common/wuzetka/flatpaks.yml
     - from-file: common/fonts.yml
