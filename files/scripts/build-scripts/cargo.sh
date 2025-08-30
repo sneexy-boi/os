@@ -17,9 +17,6 @@ cargo install --path . --root /artifacts/cargo-built/usr
 # Starship - https://starship.rs/
 cargo install starship --locked --root /artifacts/cargo-built/usr
 
-# Sheldon - https://github.com/rossmacarthur/sheldon
-cargo install sheldon --root /artifacts/cargo-built/usr
-
 # sd - https://github.com/chmln/sd.git
 cargo install sd --root /artifacts/cargo-built/usr
 
