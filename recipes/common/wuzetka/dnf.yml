@@ -173,6 +173,7 @@ install:
     - qt5-qtwayland
     - qt6-qtlocation
     - qt6-qtwayland
+    - unrar
     - util-linux
 remove:
   packages:
