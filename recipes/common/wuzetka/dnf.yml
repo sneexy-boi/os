@@ -103,7 +103,8 @@ install:
     - android-tools
     - waydroid
 
-    # mpd
+    # music
+    - https://github.com/patryk-ku/music-discord-rpc/releases/latest/download/music-discord-rpc.rpm
     - ncmpcpp
 
     # cli
