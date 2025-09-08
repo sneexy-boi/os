@@ -68,11 +68,11 @@ modules:
           - dnsmasq.service
       user:
         enabled:
-          - systemd-tmpfiles-setup.service
           - mpd.service
           - mpdris2-rs.service
-          - mpd-discord-rpc.service
+          - music-discord-rpc.service
           - rescrobbled.service
+          - systemd-tmpfiles-setup.service
 
     - type: gschema-overrides
       include:
