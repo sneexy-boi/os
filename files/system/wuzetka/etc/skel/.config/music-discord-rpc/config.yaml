@@ -1,0 +1,19 @@
+# music-discord-rpc configuration file
+#
+# reset the config via this command: music-discord-rpc --reset-config
+# refer to the example config from the repo if needed: https://github.com/patryk-ku/music-discord-rpc/blob/main/config.yaml
+
+interval: 10                            # Activity refresh rate in seconds (min 5)
+#lastfm_name: "nickname"                #
+listenbrainz_name: "Sneexy"             # lastfm/listenbrainz nicknames for activity buttons
+#rpc_name: artist                       #
+small_image: none                       # small image displayed next to the album art
+#force_player_id: "music"               #
+#force_player_name: "i love music"      # enforce icon and name for small image - unused since we disable it
+disable_mpris_art_url: false            #
+allowlist:                              #
+  - "Music Player Daemon (mpdris2-rs)"  # only enable for our music player (mpd)
+hide_album_name: false                  # show the album name
+only_when_playing: true                 # only show when music is playing
+disable_musicbrainz_cover: false        # use musicbrainz as a source
+disable_cache: false                    # duh
