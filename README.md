@@ -25,10 +25,6 @@ the same image, but replaces fprintd packages with python-validity for use with 
 
 *not* a custom arch linux image. well, it is, but it's meant for distrobox, not to actually be installed on the host or anything. it just includes most of the CLI applications and utilities and some more extras to be able to install within wuzetka to get it fully properly functional without having to deal with anything else.
 
-## kutia
-
-customized coreos image, some extra software is added but i ended up personally not using this image at all, so no support or anything of the like provided. don't use it.
-
 ## Installation
 
 > **Warning**  
