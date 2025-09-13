@@ -8,7 +8,8 @@ set -x
 #
 # Firefox Customizations
 #
-git clone https://github.com/black7375/Firefox-UI-Fix /etc/skel/.mozilla/firefox/default-profile/chrome -b proton-style
+git clone https://github.com/soulhotel/FF-ULTIMA /etc/skel/.mozilla/firefox/default-profile/chrome # FF ULTIMA is our theme of choice, we provide a custom user.js based off of Betterfox merged with the themes'
+sed -i 's@rgb(70, 63, 77)@rgb(166, 227, 161)@g' /etc/skel/.mozilla/firefox/default-profile/chrome/theme/color-schemes/catppuccin-mocha/ffu-colorscheme.css # use green accent for catppuccin theme
 
 #
 # Catppuccinify SDDM theme
