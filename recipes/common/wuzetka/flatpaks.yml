@@ -70,6 +70,7 @@ configurations:
       - io.github.dosbox-staging
       - io.github.ec_.Quake3e.OpenArena
       - io.github.lime3ds.Lime3DS
+      - io.github.ryubing.Ryujinx
       - io.github.stella_emu.Stella
       - io.mgba.mGBA
       - net.kuribo64.melonDS
