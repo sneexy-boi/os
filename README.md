@@ -18,12 +18,9 @@ The same image as Wuzetka, but it replaces `fprintd` packages with [python-valid
 
 ### `arch-wuzetka`
 
-Custom Arch Linux image made for use with Distrobox, <i>not</i> on bare metal. Just includes most of the same CLI utilities from Wuzetka to provide a seamless, integrated experience.
+Custom Arch Linux image made for use <i>strictly</i> with Distrobox. Just includes most of the same CLI utilities from Wuzetka to provide a more seamless, integrated experience.
 
 ## Installation
-
-> **Warning**  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
 
 First, check which image you want to use by copying its image name from the descriptions above, and use them in place of `<image>` in the commands below.
 
