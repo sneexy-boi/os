@@ -1,29 +1,24 @@
 # bluebuild-custom &nbsp; [![bluebuild build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml) [![bluebuild validity build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build-validity.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build-validity.yml) [![containers build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml)
 
-custom [BlueBuild](https://blue-build.org) images for myself, based on [Universal Blue](https://universal-blue.org) which are based on immutable [Fedora](https://fedoraproject.org) images.
+Custom [BlueBuild](https://blue-build.org) images for myself, based on [Universal Blue](https://universal-blue.org) which are based on immutable [Fedora](https://fedoraproject.org) images.
 
-these images are heavily opinionated and customized, but descriptions of each image is below if you want to use them or fork them.
+These images are heavily opinionated and customized, but should also be usable for others.
 
-common features shared between these images:
+## Wuzetka <sub>`wuzetka`</sub>
 
-- dns server/settings overrides
-- completely customized desktops/setups
-- custom desktop extensions and a lot of additional software (that i use daily)
-- added rizz and gyatts
-
-## wuzetka
-
+My main customized image, based on Fedora Kinoite (KDE Plasma), also the only one currently with full focus.
 customized image based on Fedora Kinoite, which uses the KDE Plasma desktop. mainly featuring a fully customized configuration and desktop to my own tastes and features many extensions on top of Plasma.
 
-may not install correctly/produce a bad install image if generating an ISO using this image, possibly due to being too large.
+> [!CAUTION]
+> [Generating an ISO](https://blue-build.org/how-to/generate-iso/) to use to install this image <b>may not work or function/install correctly</b>. I recommend installing vanilla Fedora Kinoite first then [rebasing](https://blue-build.org/learn/universal-blue/#by-rebasing-from-an-existing-installation-of-fedora-atomic-or-a-derivative) to this image afterwards.
 
-### wuzetka-validity
+### Wuzetka Validity <sub>`wuzetka-validity`</sub>
 
-the same image, but replaces fprintd packages with python-validity for use with devices with "unsupported" fingerprint scanners e.g. the Thinkpad T480
+The same image as Wuzetka, but it replaces `fprintd` packages with [python-validity](https://github.com/uunicorn/python-validity) to allow support for using "unsupported" fingerprint sensors on certain devices, such as the Thinkpad T480.
 
-### arch-wuzetka
+### `arch-wuzetka`
 
-*not* a custom arch linux image. well, it is, but it's meant for distrobox, not to actually be installed on the host or anything. it just includes most of the CLI applications and utilities and some more extras to be able to install within wuzetka to get it fully properly functional without having to deal with anything else.
+Custom Arch Linux image made for use with Distrobox, <i>not</i> on bare metal. Just includes most of the same CLI utilities from Wuzetka to provide a seamless, integrated experience.
 
 ## Installation
 
