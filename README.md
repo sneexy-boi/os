@@ -1,16 +1,19 @@
-# bluebuild-custom &nbsp; [![bluebuild build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build.yml) [![bluebuild validity build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build-validity.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/build-validity.yml) [![containers build badge](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml/badge.svg)](https://github.com/sneexy-boi/bluebuild-custom/actions/workflows/containers.yml)
+# OS &nbsp; [![bluebuild build badge](https://github.com/sneexy-boi/os/actions/workflows/build.yml/badge.svg)](https://github.com/sneexy-boi/os/actions/workflows/build.yml) [![bluebuild validity build badge](https://github.com/sneexy-boi/os/actions/workflows/build-validity.yml/badge.svg)](https://github.com/sneexy-boi/os/actions/workflows/build-validity.yml) [![containers build badge](https://github.com/sneexy-boi/os/actions/workflows/containers.yml/badge.svg)](https://github.com/sneexy-boi/os/actions/workflows/containers.yml)
 
-Custom [BlueBuild](https://blue-build.org) images for myself, based on [Universal Blue](https://universal-blue.org) which are based on immutable [Fedora](https://fedoraproject.org) images.
+Custom [Atomic](https://docs.fedoraproject.org/en-US/emerging) [Fedora](https://fedoraproject.org) images built using [BlueBuild](https://blue-build.org), based on the extra works of [Universal Blue](https://universal-blue.org)
 
-These images are heavily opinionated and customized, but should also be usable for others.
+These images are heavily opinionated and customized, mainly only meant for personal use, but are available for others' use if preferred.
+
+I don't provide support or anything - these are for myself, anyways.
 
 ## Wuzetka <sub>`wuzetka`</sub>
 
-My main customized image, based on Fedora Kinoite (KDE Plasma), also the only one currently with full focus.
-customized image based on Fedora Kinoite, which uses the KDE Plasma desktop. mainly featuring a fully customized configuration and desktop to my own tastes and features many extensions on top of Plasma.
+My main customized image, based on Fedora Kinoite (KDE Plasma). Focused on a fully personalized custom experience, themed around based on the Catppuccin Mocha theme with the Green accent color. Given a modern, flat look out of the box.
+
+Features many extensions on the Plasma desktop and custom utilities and tools for general use and gaming.
 
 > [!CAUTION]
-> [Generating an ISO](https://blue-build.org/how-to/generate-iso/) to use to install this image <b>may not work or function/install correctly</b>. I recommend installing vanilla Fedora Kinoite first then [rebasing](https://blue-build.org/learn/universal-blue/#by-rebasing-from-an-existing-installation-of-fedora-atomic-or-a-derivative) to this image afterwards.
+> [Generating an ISO](https://blue-build.org/how-to/generate-iso/) to use to install this image <b>may not work or function/install correctly</b>. I recommend installing vanilla Fedora Kinoite first then [rebasing](#installation) to this image afterwards.
 
 ### Wuzetka Validity <sub>`wuzetka-validity`</sub>
 
@@ -20,9 +23,16 @@ The same image as Wuzetka, but it replaces `fprintd` packages with [python-valid
 
 Custom Arch Linux image made for use <i>strictly</i> with Distrobox. Just includes most of the same CLI utilities from Wuzetka to provide a more seamless, integrated experience.
 
+## Mazurek <sub>`mazurek`</sub>
+
+<b>[WIP: Non existent currently.]</b>
+
+Another customized image in the same flavor of Wuzetka, but based on Fedora Silverblue and focusing on customizing and extending the GNOME desktop environment.
+
 ## Installation
 
-First, check which image you want to use by copying its image name from the descriptions above, and use them in place of `<image>` in the commands below.
+> [!WARNING]  
+> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
 
 To rebase an existing atomic Fedora installation to the latest build:
 
@@ -54,5 +64,5 @@ If build on Fedora Atomic, you can generate an offline ISO with the instructions
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/sneexy-boi/bluebuild-custom
+cosign verify --key cosign.pub ghcr.io/sneexy-boi/<image>
 ```
