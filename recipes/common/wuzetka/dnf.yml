@@ -5,7 +5,6 @@ repos:
     - deltacopy/darkly
     - matinlotfali/KDE-Rounded-Corners
     - pesader/hblock
-    - sneexy/floorp
     - sneexy/zen-browser
     - wezfurlong/wezterm-nightly
     - wojnilowicz/ungoogled-chromium
@@ -13,19 +12,16 @@ repos:
     - https://download.opensuse.org/repositories/home:mkittler/Fedora_42/home:mkittler.repo # hardcoded version because they take a while to bump to latest fedora when it releases
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-    - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
     - https://repository.mullvad.net/rpm/stable/mullvad.repo
 install:
   skip-unavailable: true
   packages:
     # web
     - firefox
-    - floorp
-    - mullvad-browser
     - mullvad-vpn
     - speedtest-cli
     - torbrowser-launcher
-    - vivaldi-stable
+    - ungoogled-chromium
     - zen-browser
 
     # "Office"
@@ -166,28 +162,23 @@ install:
     - translate-shell
 
     # other
+    - dmg2img
     - fontconfig
+    - genisoimage
     - gnome-themes-extra
     - hunspell-en
+    - libguestfs
     - lzip
+    - net-tools
+    - p7zip
     - qt5-qtwayland
     - qt6-qtlocation
     - qt6-qtwayland
+    - screen
+    - tesseract
     - unrar
     - util-linux
-remove:
-  packages:
-    - default-editor
-    - nano
-    - nano-default-editor
-    - vim-common
-    - vim-data
-    - vim-enhanced
-    - vim-filesystem
-    - vim-minimal
 optfix:
   - chromium.org
-  - floorp
   - Mullvad VPN
-  - vivaldi
   - zen
