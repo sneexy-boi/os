@@ -4,128 +4,22 @@ repos:
   copr:
     - deltacopy/darkly
     - matinlotfali/KDE-Rounded-Corners
-    - pesader/hblock
-    - sneexy/zen-browser
-    - wezfurlong/wezterm-nightly
-    - wojnilowicz/ungoogled-chromium
-  files:
-    - https://download.opensuse.org/repositories/home:mkittler/Fedora_42/home:mkittler.repo # hardcoded version because they take a while to bump to latest fedora when it releases
-    - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-    - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-    - https://repository.mullvad.net/rpm/stable/mullvad.repo
 install:
   skip-unavailable: true
   packages:
-    # web
-    - firefox
-    - mullvad-vpn
-    - speedtest-cli
-    - torbrowser-launcher
-    - ungoogled-chromium
-    - zen-browser
-
     # "Office"
-    - libreoffice
     - merkuro
-    - thunderbird
 
     # misc
-    - anda
-    - blender
-    - docker-compose
-    - kernel-modules-extra
-    - mpv
-    - nextcloud-client
     - nextcloud-client-dolphin
-    - pipx
-    - steam
-    - syncthing
-    - tailscale
-    - topgrade
-    - zed
-  
-    # beets
-    - beets
-    - beets-doc
-    - beets-plugins
-    - chromaprint-tools
-    - python3-acoustid
-    - python3-pylast
-    - python3-requests
-
-    # flac2opus
-    - flac
-    - opus-tools
 
     # environment
-    - crontabs
-    - gamescope
-    - hblock
-    - helvum
-    - mangohud
     - pavucontrol-qt
-    - playerctl
-    - trash-cli
-    - wl-clipboard
-
-    # python modules
-    - python3-colorama
-    - python3-dateutil
-    - python3-dbus
-    - python3-gobject
 
     # themes
-    - bibata-cursor-theme
     - darkly
     - oxygen-sounds
-    - pop-sound-theme
     - yaru-sound-theme
-
-    # virtualization
-    - edk2-ovmf
-    - genisoimage
-    - libvirt
-    - qemu
-    - qemu-char-spice
-    - qemu-device-display-virtio-gpu
-    - qemu-device-display-virtio-vga
-    - qemu-device-usb-redirect
-    - qemu-img
-    - qemu-system-x86-core
-    - qemu-user-binfmt
-    - virt-manager
-
-    # android
-    - android-tools
-    - waydroid
-
-    # music
-    - https://github.com/patryk-ku/music-discord-rpc/releases/latest/download/music-discord-rpc.rpm
-    - ncmpcpp
-
-    # cli
-    - bat
-    - duf
-    - eza
-    - fastfetch
-    - fd-find
-    - fzf
-    - git-delta
-    - ImageMagick
-    - knock
-    - neovim
-    - ripgrep
-    - wezterm
-    - zoxide
-    - zsh
-
-    # cli utilities
-    - btop
-    - ffmpeg
-    - figlet
-    - gdisk
-    - pv
-    - yt-dlp
 
     # kde
     - ark
@@ -162,23 +56,4 @@ install:
     - translate-shell
 
     # other
-    - dmg2img
-    - fontconfig
-    - genisoimage
-    - gnome-themes-extra
-    - hunspell-en
-    - libguestfs
-    - lzip
-    - net-tools
-    - p7zip
-    - qt5-qtwayland
     - qt6-qtlocation
-    - qt6-qtwayland
-    - screen
-    - tesseract
-    - unrar
-    - util-linux
-optfix:
-  - chromium.org
-  - Mullvad VPN
-  - zen
