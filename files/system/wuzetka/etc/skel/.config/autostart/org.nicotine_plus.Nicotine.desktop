@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=Network;FileTransfer;InstantMessaging;Chat;P2P;GTK;
+Comment=Graphical client for the Soulseek peer-to-peer network
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=nicotine org.nicotine_plus.Nicotine
+GenericName=Soulseek Client
+Icon=org.nicotine_plus.Nicotine
+Keywords=Soulseek;Nicotine;sharing;chat;messaging;P2P;peer-to-peer;GTK;
+Name=Nicotine+
+StartupNotify=true
+Terminal=false
+Type=Application
+Version=1.1
+X-Flatpak=org.nicotine_plus.Nicotine
+X-GNOME-SingleWindow=true
+X-GNOME-UsesNotifications=true
