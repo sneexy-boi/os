@@ -3,7 +3,6 @@ repos:
   nonfree: negativo17
   copr:
     - pesader/hblock
-    - sneexy/zen-browser
     - wezfurlong/wezterm-nightly
     - wojnilowicz/ungoogled-chromium
   files:
@@ -20,14 +19,12 @@ install:
     - speedtest-cli
     - torbrowser-launcher
     - ungoogled-chromium
-    - zen-browser
 
     # "Office"
     - libreoffice
     - thunderbird
 
     # misc
-    - anda
     - blender
     - docker-compose
     - kernel-modules-extra
@@ -38,7 +35,6 @@ install:
     - syncthing
     - tailscale
     - topgrade
-    - zed
   
     # beets
     - beets
@@ -97,27 +93,25 @@ install:
 
     # cli
     - bat
+    - btop
     - duf
     - eza
     - fastfetch
     - fd-find
+    - ffmpeg
+    - figlet
     - fzf
+    - gdisk
     - git-delta
     - ImageMagick
     - knock
     - neovim
+    - pv
     - ripgrep
     - wezterm
+    - yt-dlp
     - zoxide
     - zsh
-
-    # cli utilities
-    - btop
-    - ffmpeg
-    - figlet
-    - gdisk
-    - pv
-    - yt-dlp
 
     # other
     - dmg2img
@@ -129,8 +123,6 @@ install:
     - lzip
     - net-tools
     - p7zip
-    - qt5-qtwayland
-    - qt6-qtwayland
     - screen
     - tesseract
     - unrar
@@ -138,4 +130,3 @@ install:
 optfix:
   - chromium.org
   - Mullvad VPN
-  - zen

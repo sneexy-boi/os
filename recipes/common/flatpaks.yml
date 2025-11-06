@@ -9,7 +9,6 @@ configurations:
     install:
       # internet and chat
       - chat.delta.desktop
-      - chat.revolt.RevoltDesktop
       - dev.vencord.Vesktop
       - io.github.kukuruzka165.materialgram
       - io.github.moonlight_mod.moonlight-installer
@@ -50,9 +49,6 @@ configurations:
       - com.rustdesk.RustDesk
       - com.usebottles.bottles
       - fr.handbrake.ghb
-      - io.github.halfmexican.Mingle
-      - io.github.lainsce.Emulsion
-      - io.github.nate_xyz.Paleta
       - io.github.seadve.Mousai
       - io.gitlab.azymohliad.WatchMate
       - it.mijorus.gearlever
