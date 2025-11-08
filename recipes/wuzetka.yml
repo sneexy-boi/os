@@ -28,9 +28,7 @@ modules:
       - papirus-catppuccin.sh
       - posy-cursors.sh
       - vscodium.sh
-      - zen-browser.sh
       - lazyvim.sh
-      #- moonlight-launcher.sh
       - flac2opus.sh
       - just.sh
 
