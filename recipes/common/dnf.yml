@@ -121,7 +121,6 @@ install:
     - hunspell-en
     - libguestfs
     - lzip
-    - mesa-vulkan-drivers
     - net-tools
     - p7zip
     - screen
