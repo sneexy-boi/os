@@ -14,6 +14,6 @@ cd catppuccinkde
 sed -i 's@${XDG_DATA_HOME:-$HOME/.local/share}@/usr/share@g' /tmp/catppuccinkde/install.sh
 chmod +x install.sh
 # Latte
-cd /tmp/catppuccinkde && /tmp/catppuccinkde/install.sh 1 9 1
+CONFIRMATION=Y cd /tmp/catppuccinkde && /tmp/catppuccinkde/install.sh 1 9 1
 # Mocha
-cd /tmp/catppuccinkde && /tmp/catppuccinkde/install.sh 4 9 1
+CONFIRMATION=Y cd /tmp/catppuccinkde && /tmp/catppuccinkde/install.sh 4 9 1
