@@ -46,8 +46,8 @@ modules:
       - RUN chmod +x /usr/bin/unfuck-music
       - RUN chmod +x /usr/bin/dns-toggle
       # Copy self compiled software and allat
-      - COPY --from=ghcr.io/SnenxyTengoku/wuzetka-helper /artifacts/usr /usr
-      - COPY --from=ghcr.io/SnenxyTengoku/wuzetka-helper /artifacts/etc /etc
+      - COPY --from=ghcr.io/snenxytengoku/wuzetka-helper /artifacts/usr /usr
+      - COPY --from=ghcr.io/snenxytengoku/wuzetka-helper /artifacts/etc /etc
 
   - type: script
     scripts:
