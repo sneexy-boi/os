@@ -9,9 +9,8 @@ configurations:
     install:
       # internet and chat
       - chat.delta.desktop
-      - dev.vencord.Vesktop
       - io.github.kukuruzka165.materialgram
-      - io.github.moonlight_mod.moonlight-installer
+      - org.equicord.equibop
       - org.gajim.Gajim
       - org.nicotine_plus.Nicotine
       - org.qbittorrent.qBittorrent
@@ -81,11 +80,3 @@ configurations:
       - com.github.tchx84.Flatseal
       - io.github.thetumultuousunicornofdarkness.cpu-x
       - org.gustavoperedo.FontDownloader
-  - notify: false
-    scope: user
-    repo:
-      url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      name: flathub-user
-      title: "Flathub (User)"
-    install:
-      - com.discordapp.Discord # we use the moonlight mod, which requires discord installed as a user package
