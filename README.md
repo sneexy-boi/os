@@ -1,4 +1,4 @@
-# OS &nbsp; [![bluebuild build badge](https://github.com/sneexy-boi/os/actions/workflows/build.yml/badge.svg)](https://github.com/sneexy-boi/os/actions/workflows/build.yml) [![bluebuild validity build badge](https://github.com/sneexy-boi/os/actions/workflows/build-validity.yml/badge.svg)](https://github.com/sneexy-boi/os/actions/workflows/build-validity.yml) [![containers build badge](https://github.com/sneexy-boi/os/actions/workflows/containers.yml/badge.svg)](https://github.com/sneexy-boi/os/actions/workflows/containers.yml)
+# OS &nbsp; [![bluebuild build badge](https://github.com/SnenxyTengoku/os/actions/workflows/build.yml/badge.svg)](https://github.com/SnenxyTengoku/os/actions/workflows/build.yml) [![bluebuild validity build badge](https://github.com/SnenxyTengoku/os/actions/workflows/build-validity.yml/badge.svg)](https://github.com/SnenxyTengoku/os/actions/workflows/build-validity.yml) [![containers build badge](https://github.com/SnenxyTengoku/os/actions/workflows/containers.yml/badge.svg)](https://github.com/SnenxyTengoku/os/actions/workflows/containers.yml)
 
 Custom [Atomic](https://docs.fedoraproject.org/en-US/emerging) [Fedora](https://fedoraproject.org) images built using [BlueBuild](https://blue-build.org), based on the extra works of [Universal Blue](https://universal-blue.org)
 
@@ -38,7 +38,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/sneexy-boi/<image>:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/SnenxyTengoku/<image>:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -46,7 +46,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sneexy-boi/<image>:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/SnenxyTengoku/<image>:latest
   ```
 - Reboot again to complete the installation
   ```
@@ -64,5 +64,5 @@ If build on Fedora Atomic, you can generate an offline ISO with the instructions
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/sneexy-boi/<image>
+cosign verify --key cosign.pub ghcr.io/SnenxyTengoku/<image>
 ```
