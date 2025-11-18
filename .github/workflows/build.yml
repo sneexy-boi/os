@@ -30,11 +30,12 @@ jobs:
           - wuzetka.yml
           #- mazurek.yml
     steps:
-       # the build is fully handled by the reusable github action
+      # the build is fully handled by the reusable github action
       - name: Build Custom Image
         uses: blue-build/github-action@v1.9
         with:
           recipe: ${{ matrix.recipe }}
+          registry_username: snenxytengoku
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
