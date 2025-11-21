@@ -1,8 +1,10 @@
-# OS &nbsp; [![bluebuild build badge](https://github.com/SnenxyTengoku/dessert/actions/workflows/build.yml/badge.svg)](https://github.com/SnenxyTengoku/dessert/actions/workflows/build.yml) [![bluebuild validity build badge](https://github.com/SnenxyTengoku/dessert/actions/workflows/build-validity.yml/badge.svg)](https://github.com/SnenxyTengoku/dessert/actions/workflows/build-validity.yml) [![containers build badge](https://github.com/SnenxyTengoku/dessert/actions/workflows/containers.yml/badge.svg)](https://github.com/SnenxyTengoku/dessert/actions/workflows/containers.yml)
+# Dessert &nbsp; [![image builds badge](https://github.com/SnenxyTengoku/dessert/actions/workflows/build.yml/badge.svg)](https://github.com/SnenxyTengoku/dessert/actions/workflows/build.yml) [![python-validity image builds badge](https://github.com/SnenxyTengoku/dessert/actions/workflows/build-validity.yml/badge.svg)](https://github.com/SnenxyTengoku/dessert/actions/workflows/build-validity.yml) [![containers build badge](https://github.com/SnenxyTengoku/dessert/actions/workflows/containers.yml/badge.svg)](https://github.com/SnenxyTengoku/dessert/actions/workflows/containers.yml) [![distrobox image builds badge](https://github.com/SnenxyTengoku/dessert/actions/workflows/build-distrobox.yml/badge.svg)](https://github.com/SnenxyTengoku/dessert/actions/workflows/build-distrobox.yml)
 
-Custom [Atomic](https://docs.fedoraproject.org/en-US/emerging) [Fedora](https://fedoraproject.org) images built using [BlueBuild](https://blue-build.org), based on the extra works of [Universal Blue](https://universal-blue.org)
+Custom [Atomic](https://docs.fedoraproject.org/en-US/emerging) [Fedora](https://fedoraproject.org) images built using [BlueBuild](https://blue-build.org), based on the extra works of [Universal Blue](https://universal-blue.org).
 
-These images are heavily opinionated and customized, mainly only meant for personal use, but are available for others' use if preferred.
+Named Dessert, because they are sweet. `:]]`
+
+These images are heavily opinionated and customized, mainly only meant for personal use, but are available for other's use if preferred.
 
 I don't provide support or anything - these are for myself, anyways.
 

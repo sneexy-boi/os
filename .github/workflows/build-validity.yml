@@ -1,4 +1,4 @@
-name: build bluebuild images (python-validity)
+name: build images (python-validity)
 on:
   schedule:
     - cron:
